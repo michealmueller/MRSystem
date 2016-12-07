@@ -26,12 +26,21 @@ class mrsystem
     {
         $mysqli = self::DBConnect();
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES('.$username.', '.$password.', '.$email.', '.$role.')';
-        $mysqli->query($sql);
+        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES($username, $password, $email, $role)';
+        if ($mysqli->query($sql) == true){
+        	$last_id = $mysqli->insert_id;
+		}
+        $sql2 = 'INSERT INTO MRSystem.members (user_id, first_name, last_name, date_created) VALUES($last_id, $first_name, $last_name, NOW())';
     }
     public function Login($username, $password)
     {
-        //todo::pull password from DB, compare that hash to the normal password with passwrod_verify($password, $return_hash);
+    	$mysqli = self::DBConnect();
+    	$sql = 'SELECT password FROM users WHERE user_name='.$username;
+    	$pass = $mysqli->query($sql);
+    	$result = password_verify($password, $pass);
+    	$sql2 = 'SELECT role FROM users WHERE user_name='.$username;
+    	$role = $mysqli->query($sql2);
+    	return array($result, $role);
     }
     public function EditMember($user_id)
     {
@@ -45,9 +54,13 @@ class mrsystem
     {
 
     }
-    public function SelectRandom()
+    public function GetRandom($num)
     {
+		$sql = 'SELECT column FROM members ORDER BY RAND() LIMIT '.$num;
+		$mysqli = self::DBConnect();
+		$results = $mysqli->query($sql);
 
+		return $results;
     }
     public function ViewSelected()
     {
