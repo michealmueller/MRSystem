@@ -22,13 +22,16 @@ class mrsystem
         }
         return $mysqli;
     }
-    public function register($first_name, $last_name, $reference_number)
+    public function register($first_name, $last_name, $username, $password, $confirm_password, $email, $role='1', $reference_number='0') //Roles: 1:selector, 2:moderator, 3:Admin
     {
-
+        $mysqli = self::DBConnect();
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES('.$username.', '.$password.', '.$email.', '.$role.')';
+        $mysqli->query($sql);
     }
     public function Login($username, $password)
     {
-
+        //todo::pull password from DB, compare that hash to the normal password with passwrod_verify($password, $return_hash);
     }
     public function EditMember($user_id)
     {
