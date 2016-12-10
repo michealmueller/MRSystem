@@ -22,37 +22,56 @@ class mrsystem
         }
         return $mysqli;
     }
-    public function register($first_name, $last_name, $username, $password, $confirm_password, $email, $role='1', $reference_number='0') //Roles: 1:selector, 2:moderator, 3:Admin
+    public function register($first_name, $last_name, $username, $password, $confirm_password, $email, $role='1', $reference_number='000000000') //Roles: 1:selector, 2:moderator, 3:Admin
     {
         $mysqli = self::DBConnect();
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES($username, $password, $email, $role)';
+        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES('.$username.', '.$password.', '.$email.', '.$role.')';
         if ($mysqli->query($sql) == true){
-        	$last_id = $mysqli->insert_id;
-		}
-        $sql2 = 'INSERT INTO MRSystem.members (user_id, first_name, last_name, date_created) VALUES($last_id, $first_name, $last_name, NOW())';
+            $last_id = $mysqli->insert_id;
+            $sql2 = 'INSERT INTO MRSystem.members (user_id, first_name, last_name, date_created) VALUES('.$last_id.', '.$first_name.', '.$last_name.', NOW())';
+            if($mysqli->query($sql2)){
+                return true;
+            }
+        }
+        return false;
     }
     public function Login($username, $password)
     {
     	$mysqli = self::DBConnect();
-    	$sql = 'SELECT password FROM users WHERE user_name='.$username;
+    	$sql = 'SELECT password FROM users WHERE user_name='.mysqli_real_escape_string($username);
     	$pass = $mysqli->query($sql);
-    	$result = password_verify($password, $pass);
-    	$sql2 = 'SELECT role FROM users WHERE user_name='.$username;
-    	$role = $mysqli->query($sql2);
-    	return array($result, $role);
+    	$result = password_verify(mysqli_real_escape_string($password), $pass);
+    	$sql2 = 'SELECT role FROM users WHERE user_name='.mysqli_real_escape_string($username);
+    	if($result){
+    	    $role = $mysqli->query($sql2);
+    	    return $role;
+        }else{
+    	    return false;
+        }
+
     }
     public function EditMember($user_id)
     {
-
+        //Reference has to be all numeric!
     }
     public function RemoveMember($user_id)
     {
 
     }
-    public function CreateMember()
+    public function CreateMember($first_name, $last_name, $username, $password, $confirm_password, $email, $role='1', $reference_number='0')
     {
-
+        $mysqli = self::DBConnect();
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = 'INSERT INTO MRSystem.users (user_name, password, email, role) VALUES($username, $password, $email, $role)';
+        $sql2 = 'INSERT INTO MRSystem.members (user_id, first_name, last_name, date_created) VALUES($last_id, $first_name, $last_name, NOW())';
+        if ($mysqli->query($sql) == true){
+            $last_id = $mysqli->insert_id;
+            if($mysqli->query($sql2)){
+                return true;
+            }
+        }
+        return false;
     }
     public function GetRandom($num)
     {

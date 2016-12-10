@@ -1,58 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0133a09-17fe-4099-aa56-78a4b9cb9793" name="Default" comment="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/showImage.taz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MRSystem.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/38b4fee6-4f24-4050-9c37-5ac49eb5b649.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/38b4fee6-4f24-4050-9c37-5ac49eb5b649/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-color-secondary.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/da_net_skin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/googlefonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/googlefonts_roboto_condensed.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/instascreen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-bootstrap-overrides.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-printable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.2-overrides.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/skin-default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/version2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/version2_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-growl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/globalScripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/handlebars-v3.0.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/is-layout-version2_5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-ui-1.9.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.blockUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.corner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.feedback.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.focus-first.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/knockout-3.3.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/knockout.bindings.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/namespace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/prototype-1.7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sessionExpireModal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/skins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systemNotification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.html" />
+    <list default="true" id="d0133a09-17fe-4099-aa56-78a4b9cb9793" name="Default" comment="be use">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MRSystem.php" afterPath="$PROJECT_DIR$/MRSystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,56 +71,75 @@
     <favorites_list name="MRSystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MRSystem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MRSystem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding>
-                <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-                <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-                <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-                <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-                <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-                <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-                <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-                <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-                <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-                <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-                <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5830212">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/login.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="952">
+                  <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MRSystem.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/MRSystem.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+                  <folding>
+                    <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+                    <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+                    <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+                    <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+                    <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+                    <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+                    <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+                    <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>validation</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -180,6 +155,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql" />
         <option value="$PROJECT_DIR$/MRSystem.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/login.html" />
       </list>
     </option>
   </component>
@@ -214,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,13 +207,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -243,7 +220,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.login.html">
+    <configuration default="false" name="globalScripts.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="globalScripts.js" working-dir="$PROJECT_DIR$/js">
+      <browser start="true" />
+      <profiling v8-profiler-path="" />
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+        <profiling v8-profiler-path="" />
+      </EXTENSION>
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser start="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MRSystem/login.html">
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -300,6 +291,16 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.globalScripts.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.globalScripts.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -315,7 +316,8 @@
       <workItem from="1481116102003" duration="4000" />
       <workItem from="1481146464843" duration="4675000" />
       <workItem from="1481155618433" duration="14000" />
-      <workItem from="1481381843175" duration="414000" />
+      <workItem from="1481381843175" duration="4997000" />
+      <workItem from="1481408057510" duration="3648000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup &amp; Commit">
       <created>1481077512221</created>
@@ -338,29 +340,36 @@
       <option name="project" value="LOCAL" />
       <updated>1481153435649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page.">
+      <created>1481382277772</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1481382277772</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10836000" />
+    <option name="totallyTimeSpent" value="19067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1444563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14605543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978564" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14765458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978564" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -384,32 +393,132 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="69" lean-forward="false" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4505">
+          <caret line="277" column="31" lean-forward="true" selection-start-line="277" selection-start-column="31" selection-end-line="277" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1481268240121" expanded="true" signature="9674:9791" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="9881:9893" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="9998:10030" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10105:10204" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10354:10400" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10532:10538" ph=" " />
+            <marker date="1481268240121" expanded="true" signature="10786:10835" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10967:10973" ph=" " />
+            <marker date="1481268240121" expanded="true" signature="11178:11224" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="11327:11376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/skins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding>
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/globalScripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systemNotification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.feedback.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/is-layout-version2_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MRSystem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
           </folding>
         </state>
       </provider>
@@ -427,23 +536,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
           </folding>
         </state>
       </provider>
@@ -461,23 +566,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
           </folding>
         </state>
       </provider>
@@ -495,23 +596,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
           </folding>
         </state>
       </provider>
@@ -532,28 +629,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+    <entry file="file://$PROJECT_DIR$/js/knockout.bindings.custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="561">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/namespace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="158" column="7" lean-forward="true" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/skins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
           <folding>
-            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
-            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
-            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
-            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
-            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
-            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systemNotification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.feedback.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/is-layout-version2_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap-growl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="277" column="31" lean-forward="false" selection-start-line="277" selection-start-column="31" selection-end-line="277" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1481268240121" expanded="true" signature="9674:9791" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="9881:9893" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="9998:10030" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10105:10204" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10354:10400" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10532:10538" ph=" " />
+            <marker date="1481268240121" expanded="true" signature="10786:10835" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="10967:10973" ph=" " />
+            <marker date="1481268240121" expanded="true" signature="11178:11224" ph="..." />
+            <marker date="1481268240121" expanded="true" signature="11327:11376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/globalScripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,8 +722,46 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <marker date="1481410090518" expanded="true" signature="792:861" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:876" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:891" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:903" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="792:913" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="1023:1159" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="1383:1426" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1383:1453" ph="SELECT passw... users" />
+            <marker date="1481410090518" expanded="true" signature="1592:1631" ph="SELECT role users" />
+            <marker date="1481410090518" expanded="true" signature="2223:2328" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481410090518" expanded="true" signature="2348:2472" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2781" ph="SELECT colum... " />
+            <marker date="1481410090518" expanded="true" signature="2733:2782" ph="SELECT colum... " />
+          </folding>
         </state>
       </provider>
     </entry>
