@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0133a09-17fe-4099-aa56-78a4b9cb9793" name="Default" comment="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/showImage.taz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MRSystem.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/38b4fee6-4f24-4050-9c37-5ac49eb5b649.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/38b4fee6-4f24-4050-9c37-5ac49eb5b649/storage.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-color-secondary.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/da_net_skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/googlefonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/googlefonts_roboto_condensed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/instascreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-bootstrap-overrides.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-printable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/is-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.2-overrides.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.dataTables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/skin-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/version2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/version2_5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-growl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/globalScripts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/handlebars-v3.0.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/is-layout-version2_5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-ui-1.9.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.blockUI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.corner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.feedback.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.focus-first.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/knockout-3.3.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/knockout.bindings.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/namespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/prototype-1.7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sessionExpireModal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/skins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systemNotification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MuellerTek" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MuellerTek" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="users" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MuellerTek" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="members" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MRSystem" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MRSystem.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MRSystem.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+                <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+                <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+                <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+                <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+                <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+                <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+                <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+                <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+                <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+                <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Micheal Mueller &lt;micheal.mueller@muellertek.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql" />
+        <option value="$PROJECT_DIR$/MRSystem.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRSystem" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0133a09-17fe-4099-aa56-78a4b9cb9793" name="Default" comment="" />
+      <created>1481073109741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1481073109741</updated>
+      <workItem from="1481073111784" duration="5729000" />
+      <workItem from="1481116102003" duration="4000" />
+      <workItem from="1481146464843" duration="4675000" />
+      <workItem from="1481155618433" duration="14000" />
+      <workItem from="1481381843175" duration="414000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Setup &amp; Commit">
+      <created>1481077512221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481077512221</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DB connect, and start of registration done.">
+      <created>1481080676927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481080676927</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Registration, login, and GetRandom, should be functional, needs tested.">
+      <created>1481153435648</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481153435649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10836000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1444563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14765458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Setup &amp; Commit" />
+    <MESSAGE value="DB connect, and start of registration done." />
+    <MESSAGE value="Registration, login, and GetRandom, should be functional, needs tested." />
+    <MESSAGE value="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Client Files&#10;&#10;Client supplied JS and CSS files along with 1st itteration of login page." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b4fee6-4f24-4050-9c37-5ac49eb5b649/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="96" lean-forward="false" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MRSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <marker date="1481153260849" expanded="true" signature="784:853" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:862" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:873" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:874" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:881" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:888" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="784:889" ph="INSERT INTO MRSystem.users... " />
+            <marker date="1481153260849" expanded="true" signature="996:1079" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1088" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1102" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1119" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="996:1120" ph="INSERT INTO MRSystem.members... " />
+            <marker date="1481153260849" expanded="true" signature="1230:1273" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1230:1284" ph="SELECT passw... users" />
+            <marker date="1481153260849" expanded="true" signature="1385:1424" ph="SELECT role users" />
+            <marker date="1481153260849" expanded="true" signature="1724:1772" ph="SELECT colum... " />
+            <marker date="1481153260849" expanded="true" signature="1724:1773" ph="SELECT colum... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

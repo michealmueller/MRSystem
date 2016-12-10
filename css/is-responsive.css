@@ -1,0 +1,351 @@
+@CHARSET "ISO-8859-1";
+@media (min-width: 970px) and (max-width: 990px) {
+  /* Somewhere around 985 the buttons don't fit, so make them a little smaller */
+  .primary-nav-menu a {
+    width: 166px;
+  }
+}
+
+
+@media ( max-width: 970px) {
+
+  /** HEADER SETTINGS **/
+
+  /* DELETE this when we want full responsiveness below 768px */
+  #header .col-sm-8 {
+    min-height: 1px;
+    padding-left: 0;
+    position: relative;
+    float: left;
+    width: 66.66666666666666%;
+  }
+
+  /* DELETE this when we want full responsiveness below 768px */
+  #header .col-sm-4 {
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 10px;
+    position: relative;
+    float: left;
+    width: 33.33333333333333%;
+  }
+
+  #header .col-xs-3,
+  #header .col-sm-8,
+  #header .col-xs-9,
+  #header .col-xs-2,
+  #header .col-xxs-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #header img {
+    max-width: 140px;
+  }
+
+  .primary-nav-menu {
+    width: 100%;
+  }
+
+  .primary-nav-menu li {
+    margin: 0 4px 0 3px;
+    width: 19.2%;
+  }
+
+  .primary-nav-menu li:first-child {
+    display: inline;
+  }
+
+  #header .primary-nav-menu a {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+
+  /** NAV2 AND MAIN CONTAINER **/
+
+  #nav2-col {
+    float: left;
+    min-height: 1px;
+    min-width: 170px;
+    max-width: 170px;
+    width: 170px;
+    z-index: 3;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  #btn-nav2 {
+    display: block;
+  }
+
+  #nav2 {
+    position: absolute;
+    max-height: 9000px;
+    z-index: 1000;
+    min-width: 180px;
+    padding: 5px 0;
+    margin: 2.5em 0 0 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+
+  #nav2 nav {
+    border-right: 0;
+    min-height: 50px;
+  }
+
+  #nav2 .panel-heading {
+    display: none;
+  }
+
+  #nav2 a {
+    padding: 10px 10px;
+    margin-right: 10px;
+  }
+
+  #nav2 li a:hover,
+  #nav2 li a:active {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  #nav2 li.active a:link,
+  #nav2 li.active a:visited,
+  #nav2 li.active a:hover,
+  #nav2 li.active a:active {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  #nav2 hr {
+    display: none;
+  }
+
+  #nav2 .panel-heading {
+    border-top-right-radius: 5px;
+  }
+
+  #content-col {
+    float: none;
+    min-height: 1px;
+    width: 100%;
+    clear: both;
+    padding-right: 15px;
+  }
+
+  /* datatables styles */
+  .dataTables_wrapper {
+    margin-top: 1.5em;
+  }
+
+  /** Text Styles **/
+
+
+  /** END Text Styles **/
+
+} /* END Media max-width: 970px; */
+
+
+@media (min-width: 970px) {
+
+  #userMenu {
+    padding-right: 20px;
+  }
+
+  #userMenu .dropdown-menu {
+    margin-right: 15px;
+  }
+
+  #page-title-group .col-sm-6 {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 759px) {
+
+  .form-group-inline {
+    width: 100%;
+  }
+
+  .form-group-inline .form-group {
+    float: none;
+    width: 100%;
+  }
+
+  .text-right-when-columned {
+    text-align: left;
+  }
+
+  .text-right-when-columned:first-child {
+    margin-top: .5em;
+  }
+
+  #page-title-group .col-sm-3 {
+    float: none;
+    width: 100%;
+  }
+
+  #page-title-group .col-sm-4 {
+    float: none;
+    width: 100%;
+  }
+
+  #page-title-group .col-sm-5 {
+    float: none;
+    width: 100%;
+  }
+
+  #page-title-group .col-sm-6 {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 760px) {
+
+  .text-right-when-columned {
+    text-align: right;
+  }
+
+  .text-right-when-columned:first-child {
+    margin-top: 0;
+  }
+
+  #page-title-group .col-sm-3 {
+    position: relative;
+    float: left;
+    width: 25%;
+  }
+
+  #page-title-group .col-sm-4 {
+    position: relative;
+    float: left;
+    width: 33.33333333333333%;
+  }
+
+  #page-title-group .col-sm-5 {
+    position: relative;
+    float: right;
+    width: 41.66666666666667%;
+  }
+
+  #page-title-group .col-sm-6 {
+    position: relative;
+    width: 50%;
+  }
+
+}
+
+/* Uncomment the @media (max-width: 767) styles when we want full responsiveness smaller than 768px */
+/*
+@media (max-width: 767px) {
+  #header .col-sm-8 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #header .col-xs-10 {
+    padding-left: 0px;
+  }
+
+  .header-logo-col {
+    clear: both;
+  }
+
+  .header-spacer-image {
+    display: none;
+  }
+
+  #header .header-vertical-center {
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+
+  #header-search .navbar-form {
+    padding-left: 0;
+  }
+
+  #userMenu {
+    padding-top: 0.5rem;
+  }
+
+}
+*/
+
+/* Uncomment these styles below when we want full responsiveness smaller than 768px */
+/*
+@media( max-width: 599px) {
+ .primary-nav-menu li {
+   margin: 0 1px 0 1px;
+   width: 19.1%;
+ }
+}
+*/
+
+
+/*@media( max-width: 590px) {
+
+  /* New xxs-8 setting to allow extra small columns */
+/* Uncomment these styles below when we want full responsiveness smaller than 768px */
+/*
+#header .col-xxs-8 {
+  min-height: 1px;
+  padding-left: 0;
+  position: relative;
+  float: left;
+  width: 66.66666666666666%;
+} */
+
+/* New xxs-4 setting to allow extra small columns */
+/* Uncomment these styles below when we want full responsiveness smaller than 768px */
+/*
+#header .col-xxs-4 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 0px;
+  position: relative;
+  float: left;
+  width: 33.33333333333333%;
+}* /
+}
+
+/*
+@media( max-width: 420px) {
+#userMenu {
+  text-align: left;
+}
+
+#userMenu .pull-right {
+  right: auto; / *undo the pull-right settings * /
+}
+
+/* New xxs-8 setting to allow extra small columns */
+/*
+#header .col-xxs-8 {
+  float: none;
+  width: 100%;
+}*/
+
+/* New xxs-4 setting to allow extra small columns */
+/*
+#header .col-xxs-4 {
+  float: none;
+  width: 100%;
+  padding-left: 0;
+}
+}*/

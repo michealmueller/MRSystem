@@ -1,0 +1,701 @@
+/* --------------------------------------------------------------------------------
+
+   Classic style overrides (see _styles/version2.css for full reference)
+
+   Note: These styles will ultimately be replaced with bootstrap.css and our own
+   bootstrap overrides and skin specific styles (is-overrides.css, is-layout.css)
+
+   All version 2.5 bootstrap overrides have been moved to is-overrides.css in an
+   effort to continually evolve those styles as we continue down a more responsive
+   user experience --> as such the styles you see below are now static and dying!
+
+   -------------------------------------------------------------------------------- */
+
+body, td {
+  font-family: Roboto,sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: separate;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.reportBodyEditDiv p {
+  margin-bottom: 0.2em;
+}
+
+form {
+  margin:0;
+}
+
+label {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+label.inline {
+  display: inline;
+}
+
+label.nowrap {
+  white-space:nowrap;
+}
+
+.form-horizontal label {
+  margin-top: 0px; /* restore bootstrap default when in a bootstrap form organization */
+}
+
+.horizontal-label > label {
+  padding-top: 5px;
+}
+
+.field-value {
+  font-weight: bold;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 3px 3px 0 3px;
+}
+
+input[type="file"] {
+  display: inline;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+#common-area *, #common-area *:before, #common-area *:after {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+#content-col>#common-area .form-value {
+  font-family: 'Roboto Condensed',sans-serif;
+  font-size: 1.4rem;
+  height: 2.1rem;
+  margin: 0;
+  line-height: 1.42857;
+  vertical-align: middle;
+}
+
+a, a.form-value {
+  color: #CC6600;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a.col:link, a.col:visited {
+  color: #333333;
+}
+
+a.col:hover {
+  color: #000000;
+}
+
+h1, h2, h3 {
+  xfont-family:Roboto,sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+h3.no-margin {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+h3.client-conf {
+  margin-bottom: 10px; /* restore bootstrap default for client configuration pages based on adding style */
+}
+
+hr {
+  width: 90%;
+  height: 1px;
+  color: #96967D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr.gray {
+  width: 100%;
+  height: 1px;
+  color: #D8D8D8;
+}
+
+hr.dotted {
+  width: 100%;
+  height: 1px;
+  color: #96967D;
+  border-style: dotted;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 0px;
+}
+
+sup {
+  font-size: 6pt;
+}
+
+fieldset {
+  padding: 10px;
+  padding-top: 0px;
+  border: 1px solid #D8D8D8;
+}
+
+legend {
+  color: #333333;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.form-control::-moz-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.form-control:-ms-input-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+
+/* ----------------------------------------
+   Navigation elements
+   ---------------------------------------- */
+
+.top-banner {
+  background-color: #6E7658;
+}
+
+.top-banner-row {
+  height: 32px;
+}
+
+.top-banner-accent {
+  background-color: #96967D;
+  height: 2px;
+}
+
+.top-banner-title {
+  vertical-align: middle;
+  text-decoration: none;
+  font: 14px Roboto,sans-serif;
+  color: #FFFFFF;
+}
+
+.primary-link {
+  vertical-align: middle;
+}
+
+.primary-link a {
+  font: 11px Roboto,sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.primary-link a:hover {
+  text-decoration: none;
+  color: #D7D7A7;
+}
+
+#primary-nav {
+  text-align: left;
+}
+
+.primary-nav-menu {
+  font: 10px Roboto,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+}
+
+.primary-nav-menu-active {
+  font: 10px Roboto,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+}
+
+.primary-nav-menu-active a {
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 2px 3px 1px 3px;
+  border: 1px solid #96967D;
+  background-color: #96967D;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.primary-nav-menu a {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 2px 3px 1px 3px;
+  border: 1px dotted #B5B596;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.primary-nav-menu a:hover {
+  color: #FFFFFF;
+  background-color: #96967D;
+  border: 1px solid #96967D;
+}
+
+.primary-nav-menu-filler {
+  width: 180px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-bottom: 0;
+}
+
+.primary-nav-menu-filler a {
+  display: block;
+  border: 1px dotted #B5B596;
+  text-decoration: none;
+  cursor: default;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+#quickapp {
+  padding: 0 20px 0 20px;
+}
+
+#quickapp-help {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+#quick-verify-form .form-label {
+  vertical-align: middle;
+}
+
+#quick-verify-form h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+#logo-container {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 8px;
+  min-height: 54px;
+  width: 980px;
+}
+
+#float-container {
+  position: relative;
+  display: inline-block;
+  width: 810px;
+}
+
+#main-container {
+  position: relative;
+  margin: 0 auto;
+  width: 982px;
+  background-color: #FFFFFF;
+  border-top: 4px solid #96967D;
+  border-bottom: 2px solid #96967D;
+}
+
+#paginated-look {
+  border-right: 1px dotted #6E7658;
+}
+
+#footer {
+  text-align: center;
+  padding: 5px 0 20px 0;
+  margin: 0 auto;
+  width: 980px;
+}
+
+.subelement-level1 {
+  padding-left: 30px;
+}
+
+.product-config-sub-header {
+  padding-bottom: 2px;
+}
+
+td.subelement-level1 {
+  font-size: 11px;
+  padding-bottom: 1px;
+}
+
+.drop-down-predefined-fees {
+  max-width: 345px;
+}
+
+
+#buttonMenuDiv {
+  margin-bottom: 1px;
+}
+
+/*
+  Fix for IS-1130.  The table with the form elements would push down over the Save and Cancel buttons.
+  This div contains that table. Setting display:table on this div keeps its contents within it whenever
+  they expand or reduce in height.
+ */
+#hit-ratio-form #form-main {
+  display: table;
+}
+
+
+/* ----------------------------------------
+   Common area (shared page) styles
+   ---------------------------------------- */
+
+#common-area {
+  position: relative;
+  width: 760px;
+  min-height: 520px;
+  padding: 25px;
+  padding-top: 20px;
+}
+
+#page-title {
+  position: relative;
+  width: 760px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#page-sub-title {
+  position: relative;
+  width: 760px;
+  padding-bottom: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #202020;
+}
+
+#page-ins {
+  position :relative;
+  width: 760px;
+  padding-bottom: 20px;
+  font-size: 11px;
+}
+
+.page-ins-bold {
+  position: relative;
+  width: 760px;
+  padding-bottom: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #202020;
+}
+
+#page-error {
+  border: 1px dotted #000000;
+  background-color: #FFFFA0;
+  position: relative;
+  width: 760px;
+  padding: 5px;
+  margin-bottom: 22px;
+  font-size: 11px;
+}
+
+#modal-error {
+  border: 1px dotted #000000;
+  background-color: #FFFFA0;
+  position: relative;
+  width: 550px;
+  padding: 5px;
+  margin-bottom: 22px;
+  font-size: 11px;
+}
+
+#page-main {
+  position: relative;
+  width: 760px;
+}
+
+#window-head {
+  border-top: 1px solid #D7D7A7;
+  border-left: 1px solid #D7D7A7;
+  border-right: 2px solid #B5B596;
+  border-bottom: 2px solid #B5B596;
+  background-color: #96967D;
+  display: block;
+  padding: 25px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+#window-main {
+  margin: 20px;
+  margin-top: 15px;
+}
+
+
+ul.form-list {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+
+ul.form-list li {
+  padding: 0;
+  margin:0;
+}
+
+ul.feedEkList{
+  margin:0;
+}
+
+
+.section-header {
+  border: solid 1px #e3e3e3;
+  background-color: #e3e3e3;
+  content: " ";
+  margin: 1rem 0 0.5rem 0;
+}
+
+li:first-child .section-header {
+  margin-top: 0;
+}
+
+.section-header:before,
+.section-header:after {
+  content: " ";
+  display: table;
+}
+
+.section-header:after {
+  clear: both;
+}
+
+.section-header h2 {
+  margin-bottom: 0;
+  padding-bottom: 7px;
+}
+
+.section-header a {
+  margin-top: 2px;
+}
+.main-row {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.field-60,
+.input-group .field-60 { /* Price fields need a style that is a bit more specific to apply correctly */
+  width: 60px;
+}
+
+.field-80 {
+  width: 80px;
+}
+
+.field-90 {
+  width: 90px;
+}
+
+.field-240 {
+  width: 240px;
+}
+
+.field-160 {
+  width: 160px;
+}
+
+.field-180 {
+  width: 180px;
+}
+
+.field-320 {
+  width: 320px;
+}
+
+.field-400 {
+  width: 400px;
+}
+
+.field-100 {
+  width: 100px;
+}
+
+.field-120 {
+  width: 120px;
+}
+
+/** Quickapp Styles **/
+.body-eQA {
+  background-color: #004990; /* primary color */
+}
+
+.container-eQA {
+  overflow:auto;
+  max-width: 1040px;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-size:0.9em;
+}
+
+.row-eQA {
+  max-width:980px;
+}
+
+
+#calaw p,
+#calaw ul li {
+  font-size: 1.6rem;
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+
+.panel-eQA{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+
+
+@font-face {
+  font-family: "QuickAppSignature";
+  src: url("/_fonts/CuttyFruty.ttf");
+}
+
+.signature-eQA{
+  font-family: QuickAppSignature;
+  font-weight: bold;
+  font-size:1.5em;
+}
+
+.margin-top-10 {
+  margin-top:-10px;
+}
+
+#divRss h3 {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+#divRss h3 a {
+  color: #008F8F;
+}
+
+#divRss p.date {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 0;
+}
+
+/**
+ * Warning message to display on all pages
+ */
+#immediate-message {
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/**
+ * New feature call out (meant for sup tag with text New)
+ */
+.new-feature {
+  color: #900;
+  display: inline-block;
+  font-size: .8em;
+  transform: rotate(15deg);
+}
+
+table.dataTable thead th.no-sort.sorting_disabled {
+  cursor:default;
+}
+
+/**
+ * Styles to get proper display on QuickApps with and without proper formatting
+ * - radios without labels
+ * - panels with rows but no columns
+ * TEMP: Only meant to bridge the gap between where QuickApp
+ * disclosures are and where they should be.
+ * Adding <label> breaks this style but visually looks the same
+ * to allow for stepped upgrade of form. Like wize removal of
+ * the row or addition of a column breaks the second style.
+ */
+.row.row-eQA .radio > input[type=radio] {
+  margin-left: 0;
+  position: static;
+  margin-right: 5px;
+}
+.panel-body > .row-eQA > p {
+  margin-left: 15px;
+  margin-right: 15px;
+}

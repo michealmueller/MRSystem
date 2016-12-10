@@ -1,0 +1,29 @@
+.form-list-large {
+  display:inline;
+  width:100%;
+  overflow:visible;
+  overflow-x:visible;
+}
+
+
+header, #nav2-col, .action-button, #page-ins, .list-options, div.dataTables_paginate,  select[name="resultsPerPage"] {
+	display: none !important;
+}
+
+
+.row.row-eQA{
+    margin-top:0px;
+}
+
+
+#VOL_CA_RIGHTS p, 
+#VOL_CA_RIGHTS ul li {
+	font-size: 12pt;
+	font-family: "Times New Roman", Georgia, serif; 
+}
+
+
+#california-disclaimer td {
+  font-size:12pt;
+  font-family: "Times New Roman", Georgia, serif; 
+}

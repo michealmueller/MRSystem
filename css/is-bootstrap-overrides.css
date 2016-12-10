@@ -1,0 +1,1450 @@
+/* --------------------------------------------------------------------------------
+
+   InstaScreen specific Bootstrap style overrides
+
+   Note: These styles are meant to override or add additional colors etc.
+   to existing bootstrap CSS components such as well, panels, and the like.
+
+   -------------------------------------------------------------------------------- */
+
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+.well-default {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.well-none {
+  border: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.well-primary {
+  border: 1px solid #006699;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.well-secondary {
+  border: 1px solid #009047;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+h1#page-title {
+  margin-bottom: 1.5em;
+}
+
+h1.sub-sub-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+hgroup {
+  margin-bottom: 1.5em;
+}
+
+hgroup h1 {
+  margin-bottom: 0;
+}
+
+#common-area-fluid h2 {
+  font-size: 1.4rem;
+}
+
+hgroup h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hgroup h2+h2 {
+  margin-top: .75em;
+}
+
+hgroup.panel-heading {
+  margin-bottom: 0;
+}
+
+section>hgroup {
+  margin-bottom: 0;
+}
+
+#page-title-group #page-title {
+  width: 100%;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+a.btn-heading {
+  margin-top: 3px; /* used to line up buttons on the same line as a heading*/
+}
+
+#common-area-fluid {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#common-area-fluid a:link,
+#common-area-fluid a:visited{
+  text-decoration: none;
+}
+
+#common-area-fluid a:hover,
+#common-area-fluid a:active {
+  text-decoration: underline;
+}
+
+#common-area-fluid #page-title {
+  width: 100%;
+}
+
+#common-area-fluid section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#common-area-fluid section section:first-child {
+  margin-top: 0;
+}
+
+#common-area-fluid section section:last-child {
+  margin-bottom: 0;
+}
+
+#common-area-fluid label {
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+#order-form h3,
+#common-area-fluid .form-design-basic h3 {
+  clear: left;
+}
+
+#order-form label,
+#common-area-fluid .form-design-basic label {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+#order-form label.small,
+#common-area-fluid .form-design-basic label.small {
+  font-size: 1.2rem;
+}
+
+#order-form label.smaller,
+#common-area-fluid .form-design-basic label.smaller {
+  font-size: 1em;
+}
+
+#order-form input,
+#common-area-fluid .form-design-basic input {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.h-spacer-5 {
+    margin-left: 5px;
+}
+
+.h-spacer-15 {
+    margin-left: 15px;
+}
+
+.hr-taz  {
+  display: block;
+  margin: 1em auto;
+  border: solid 1px #deefff;/* info color */
+  width: 100%;
+  height: 0;
+}
+
+
+h3+hr.hr-taz {
+  margin-top: 0.5rem;
+}
+
+
+.panel-group {
+    margin-bottom: 20px;
+}
+
+.panel-group .panel .panel {
+    margin-bottom: 20px;
+}
+
+.panel-heading {
+  border-bottom: 0;
+}
+
+.panel h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+}
+
+
+.well-tazworks3 {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /*#ecf0f1;*/
+  border: 1px solid #ffffff; /*#d7e0e2;*/
+  border-radius: 4px;
+/*  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); */
+}
+
+
+.taz-tooltip {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  display: none;
+  border: solid 1px #ccc;
+  color: #333;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-family: Roboto, sans-serif;
+}
+
+.tooltip-icon {
+  cursor: default;
+  font-size: 1.5rem;
+}
+
+.tooltip-icon:hover .taz-tooltip {
+  display: inline-block;
+}
+
+footer {
+  margin-top: 2em;
+/*  max-width: 1024px;*/
+  margin-bottom: 2em;
+}
+
+/** Text Styles **/
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.text-em {
+  font-style: italic;
+}
+
+.text-right-when-columned {
+  text-align: left;
+}
+
+/** END Text Styles **/
+
+
+/**
+ * Welcome Page Styles
+ */
+
+ .last-login {
+   color: #999;
+   font-style: italic;
+ }
+
+.contact-info {
+  font-size: 1.4rem;
+}
+
+.contact-info .col-xs-4,
+.contact-info .col-xs-3 {
+  padding-right: 5px;
+}
+
+.contact-info .col-xs-8,
+.contact-info .col-xs-9 {
+  padding-left: 0;
+}
+
+.footer-company-name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+/** END Welcome Page Styles **/
+
+
+/** Help Page Styles **/
+
+#help-container {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 10px;
+  padding-left: 25px;
+  width: 420px;
+}
+
+#help-container .panel-group {
+  border: none;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#help-container .panel {
+  border: none;
+}
+
+#help-container .panel-heading {
+  background-image: none;
+}
+
+#help-container h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+#help-container h2 button {
+  padding: 0;
+  color: #333;
+}
+
+#help-container a:link,
+#help-container a:visited {
+  text-decoration: none;
+}
+
+#help-container a:hover,
+#help-container a:active {
+  text-decoration: underline;
+}
+
+#help-container a.link-downloadAttachment {
+  display: block;
+  cursor: pointer;
+}
+
+#help-container a.file-size {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+#help-container .table {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#help-container .table tr td {
+  border: 0;
+}
+
+#help-container .table tr:first-child td {
+  border-top: 0;
+}
+
+#help-container .table td:last-child {
+  text-align: right;
+}
+
+#help-container .clickableRow {
+  cursor: pointer;
+}
+
+#help-container .panel-default .panel-heading {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: inherit;
+}
+
+#help-container .panel-default .panel-body {
+  border-top: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background-color: inherit;
+}
+
+/** END Help Page Styles **/
+
+
+/** Validation Error Styles **/
+label.error {
+  color: #b94a48;
+}
+
+input.error, select.error, textarea.error {
+  color: #dc0000;
+  background-color: #fffccc;
+  border-color: rgba(220, 0, 0, 0.8);
+}
+
+input.error:focus, input.error:invalid:focus, select.error:focus, select.error:invalid:focus, textarea.error:focus{
+  color: #dc0000;
+  border-color: rgba(220, 0, 0, 0.8);
+  background-color: #fffaaa;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 0, 0, 0.6);
+}
+
+.tooltip {
+  /**
+   * This is one of the default values but not the final one (1030). Anything less
+   * than 1040 will put it below modals, 1050 for some modal content.
+   */
+  z-index: 1070;
+}
+
+.tooltip.error .tooltip-inner {
+  min-width: 250px;
+  padding: 10px 20px;
+  text-align: left;
+  background-color: #b94a48;
+}
+
+.tooltip.error.top .tooltip-arrow {
+  border-top-color: #b94a48;
+}
+
+.tooltip.error.right .tooltip-arrow {
+  border-right-color: #b94a48;
+}
+
+.tooltip.error.bottom .tooltip-arrow {
+  border-bottom-color: #b94a48;
+}
+
+.tooltip.error.left .tooltip-arrow {
+  border-left-color: #b94a48;
+}
+
+
+/** END Validation Error Styles **/
+
+
+/** Modal Styles **/
+
+.modal-header {
+  padding: 9px 15px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.modal-header hgroup {
+  margin: 0;
+}
+
+.modal-header h2,
+#common-area-fluid .modal-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.428571429;
+}
+
+.modal-header h4,
+#common-area-fluid .modal-header h4 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.modal-content div.modal-body,
+.modal-body {
+  padding: 20px;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.modal-danger .modal-header {
+  background-color: #b92c28;
+  color: #fff;
+}
+
+/** END Modal Styles **/
+
+
+/** Tabs **/
+
+#common-area-fluid #form-tabs {
+  width: auto;
+}
+
+#common-area-fluid #form-main-open {
+  width: auto;
+}
+
+ul.nav {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.tab-pane {
+  padding-top: 5px;
+}
+
+/** END tabs **/
+
+
+/** Form Styles **/
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group > .form-group {
+    margin-bottom: 0;
+}
+
+.form-group:before,
+.form-group:after {
+  display: table;
+  content: " ";
+}
+
+.form-group-inline {
+  float: left;
+  margin-left: -0.5em;
+}
+
+.form-group-inline .form-group {
+  float: left;
+  margin-left: .5em;
+}
+
+#common-area-fluid #order-form {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.input-group-sm > .input-group-addon {
+  height: auto;
+}
+
+.btn-cancel {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/** END Form Styles **/
+
+
+/** Dialog Styles **/
+
+.bg-danger {
+    background-color: #FFDDEE;
+}
+
+ul.dialog-tabs {
+  margin: 0;
+}
+
+ul.dialog-tabs li:first-of-type {
+  padding-left: 5px;
+}
+
+.dialog-tabs li.active > a,
+.dialog-tabs li.active > a:hover {
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.dialog-tabs li > a {
+  background-color: #f8f8f8;
+  border-bottom-color: #dddddd;
+}
+
+.dialog-tabs li > a:hover {
+  background-color: #eeeeee;
+  border-bottom-color: #dddddd;
+}
+
+.dialog-tabs li > a,
+.dialog-tabs li > a:hover,
+.dialog-tabs li > a:focus {
+  text-decoration: none;
+}
+
+.dialog-tabs li.error > a,
+.dialog-tabs li.error > a:hover {
+  color: #b94a48;
+}
+
+.dialog-content .tab-pane {
+  border-bottom: 1px solid #dddddd;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  min-height: 420px;
+}
+
+.dialog-content .tab-pane > .panel {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+/** Button Styles **/
+.icon-text-spacer {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  line-height: 1.42857;
+}
+
+script+.btn-group {
+  margin-left: 5px;
+}
+
+i.detail {
+  cursor: default;
+}
+
+/** END Button Styles **/
+
+/** Bootstrap-Related Settings **/
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12,
+.row,
+.form-control {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.form-control:before, .form-control:after,
+.row:before, .row:after,
+.col-sm-3:before, .col-sm-3:after,
+.col-sm-4:before, .col-sm-4:after,
+.col-sm-6:before, .col-sm-6:after {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.form-control.datepick {
+  width:72%;
+  display:inline;
+}
+
+button.ui-datepicker-trigger {
+  height: 2em;
+  bottom: 0;
+  top: 0;
+}
+
+
+.panel {
+  border-width: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: none;
+}
+
+.panel.show-border {
+  border-width: 1px;
+}
+
+.panel .panel-body {
+  border: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+
+.panel.panel-default {
+  border: solid 1px #DDD;
+}
+
+
+.panel-default .panel-body {
+  border-top: solid 1px #DDD;
+}
+
+
+.panel-primary > .panel-heading,
+.panel-secondary > .panel-heading,
+.panel-tertiary > .panel-heading,
+.panel-default > .panel-heading {
+  background-image: none;
+}
+
+.well {
+  background-image: none;
+}
+
+.alert-danger,
+.alert-success,
+.alert-default,
+.alert-info {
+  background-image: none;
+}
+
+.alert + .panel {
+  /* Reduce spacing when an alert and a panel are adjacent.
+  This just helps reduce unncessary white space. */
+  margin-top: -15px;
+}
+
+.alert + .alert {
+  /* Reduce spacing when an alert and another alert are adjacent.
+  This just helps reduce unncessary white space. */
+  margin-top: -15px;
+}
+
+.btn-default,
+.btn-success {
+  background-image: none;
+}
+
+.btn-gray {
+  color: #fff;
+  background-color: #999;
+  border-color: #999;
+}
+
+.v-spacer {
+    margin-top: 5px;
+}
+
+.no-margins {
+  margin: 0;
+}
+
+
+.padding-sm-horiz {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.padding-sm-all {
+  padding: 10px 10px;
+}
+
+.small {
+  font-size: 1.2rem !important;
+}
+
+.padding-small .col-xs-1,
+.padding-small .col-xs-2,
+.padding-small .col-xs-3,
+.padding-small .col-xs-4,
+.padding-small .col-xs-5,
+.padding-small .col-xs-6,
+.padding-small .col-xs-7,
+.padding-small .col-xs-8,
+.padding-small .col-xs-9,
+.padding-small .col-xs-10,
+.padding-small .col-xs-11 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#order-form .padding-small .col-xs-11 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* TEMP: because we copied this to everything in the system, I am fixing this with
+   an additional class instead of taking advantage of the existing ones that would work. */
+/*.padding-small .padding-small-fix {
+ padding-left: 4px;
+ padding-right: 4px;
+}*/
+
+.padding-small .col-xs-1.padding-small-fix:first-child,
+.padding-small .col-xs-2.padding-small-fix:first-child,
+.padding-small .col-xs-3.padding-small-fix:first-child,
+.padding-small .col-xs-4.padding-small-fix:first-child,
+.padding-small .col-xs-5.padding-small-fix:first-child,
+.padding-small .col-xs-6.padding-small-fix:first-child,
+.padding-small .col-xs-7.padding-small-fix:first-child,
+.padding-small .col-xs-8.padding-small-fix:first-child,
+.padding-small .col-xs-9.padding-small-fix:first-child,
+.padding-small .col-xs-10.padding-small-fix:first-child,
+.padding-small .col-xs-11.padding-small-fix:first-child,
+.padding-small .col-xs-12.padding-small-fix:first-child {
+  padding-left: 15px;
+}
+
+.padding-small .col-xs-1.padding-small-fix:last-child,
+.padding-small .col-xs-2.padding-small-fix:last-child,
+.padding-small .col-xs-3.padding-small-fix:last-child,
+.padding-small .col-xs-4.padding-small-fix:last-child,
+.padding-small .col-xs-5.padding-small-fix:last-child,
+.padding-small .col-xs-6.padding-small-fix:last-child,
+.padding-small .col-xs-7.padding-small-fix:last-child,
+.padding-small .col-xs-8.padding-small-fix:last-child,
+.padding-small .col-xs-9.padding-small-fix:last-child,
+.padding-small .col-xs-10.padding-small-fix:last-child,
+.padding-small .col-xs-11.padding-small-fix:last-child,
+.padding-small .col-xs-12.padding-small-fix:last-child {
+  padding-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .padding-small .col-lg-1,
+  .padding-small .col-lg-2,
+  .padding-small .col-lg-3,
+  .padding-small .col-lg-4,
+  .padding-small .col-lg-5,
+  .padding-small .col-lg-6,
+  .padding-small .col-lg-7,
+  .padding-small .col-lg-8,
+  .padding-small .col-lg-9,
+  .padding-small .col-lg-10,
+  .padding-small .col-lg-11 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .padding-small .col-md-1,
+  .padding-small .col-md-2,
+  .padding-small .col-md-3,
+  .padding-small .col-md-4,
+  .padding-small .col-md-5,
+  .padding-small .col-md-6,
+  .padding-small .col-md-7,
+  .padding-small .col-md-8,
+  .padding-small .col-md-9,
+  .padding-small .col-md-10,
+  .padding-small .col-md-11 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .padding-small .col-sm-1,
+  .padding-small .col-sm-2,
+  .padding-small .col-sm-3,
+  .padding-small .col-sm-4,
+  .padding-small .col-sm-5,
+  .padding-small .col-sm-6,
+  .padding-small .col-sm-7,
+  .padding-small .col-sm-8,
+  .padding-small .col-sm-9,
+  .padding-small .col-sm-10,
+  .padding-small .col-sm-11 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .padding-small .row {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  .padding-small .col-xs-1.padding-small-fix:first-child,
+  .padding-small .col-xs-2.padding-small-fix:first-child,
+  .padding-small .col-xs-3.padding-small-fix:first-child,
+  .padding-small .col-xs-4.padding-small-fix:first-child,
+  .padding-small .col-xs-5.padding-small-fix:first-child,
+  .padding-small .col-xs-6.padding-small-fix:first-child,
+  .padding-small .col-xs-7.padding-small-fix:first-child,
+  .padding-small .col-xs-8.padding-small-fix:first-child,
+  .padding-small .col-xs-9.padding-small-fix:first-child,
+  .padding-small .col-xs-10.padding-small-fix:first-child,
+  .padding-small .col-xs-11.padding-small-fix:first-child,
+  .padding-small .col-xs-12.padding-small-fix:first-child {
+    padding-left: 4px;
+  }
+
+  .padding-small .col-xs-1.padding-small-fix:last-child,
+  .padding-small .col-xs-2.padding-small-fix:last-child,
+  .padding-small .col-xs-3.padding-small-fix:last-child,
+  .padding-small .col-xs-4.padding-small-fix:last-child,
+  .padding-small .col-xs-5.padding-small-fix:last-child,
+  .padding-small .col-xs-6.padding-small-fix:last-child,
+  .padding-small .col-xs-7.padding-small-fix:last-child,
+  .padding-small .col-xs-8.padding-small-fix:last-child,
+  .padding-small .col-xs-9.padding-small-fix:last-child,
+  .padding-small .col-xs-10.padding-small-fix:last-child,
+  .padding-small .col-xs-11.padding-small-fix:last-child,
+  .padding-small .col-xs-12.padding-small-fix:last-child {
+    padding-right: 4px;
+  }
+} /* END media 767px */
+
+.padding-small>.col-xs-1:first-child,
+.padding-small>.col-sm-1:first-child,
+.padding-small>.col-md-1:first-child,
+.padding-small>.col-lg-1:first-child,
+.padding-small>.col-xs-2:first-child,
+.padding-small>.col-sm-2:first-child,
+.padding-small>.col-md-2:first-child,
+.padding-small>.col-lg-2:first-child,
+.padding-small>.col-xs-3:first-child,
+.padding-small>.col-sm-3:first-child,
+.padding-small>.col-md-3:first-child,
+.padding-small>.col-lg-3:first-child,
+.padding-small>.col-xs-4:first-child,
+.padding-small>.col-sm-4:first-child,
+.padding-small>.col-md-4:first-child,
+.padding-small>.col-lg-4:first-child,
+.padding-small>.col-xs-5:first-child,
+.padding-small>.col-sm-5:first-child,
+.padding-small>.col-md-5:first-child,
+.padding-small>.col-lg-5:first-child,
+.padding-small>.col-xs-6:first-child,
+.padding-small>.col-sm-6:first-child,
+.padding-small>.col-md-6:first-child,
+.padding-small>.col-lg-6:first-child,
+.padding-small>.col-xs-7:first-child,
+.padding-small>.col-sm-7:first-child,
+.padding-small>.col-md-7:first-child,
+.padding-small>.col-lg-7:first-child,
+.padding-small>.col-xs-8:first-child,
+.padding-small>.col-sm-8:first-child,
+.padding-small>.col-md-8:first-child,
+.padding-small>.col-lg-8:first-child,
+.padding-small>.col-xs-9:first-child,
+.padding-small>.col-sm-9:first-child,
+.padding-small>.col-md-9:first-child,
+.padding-small>.col-lg-9:first-child,
+.padding-small>.col-xs-10:first-child,
+.padding-small>.col-sm-10:first-child,
+.padding-small>.col-md-10:first-child,
+.padding-small>.col-lg-10:first-child,
+.padding-small>.col-xs-11:first-child,
+.padding-small>.col-sm-11:first-child,
+.padding-small>.col-md-11:first-child,
+.padding-small>.col-lg-11:first-child,
+.padding-small>.col-xs-12:first-child,
+.padding-small>.col-sm-12:first-child,
+.padding-small>.col-md-12:first-child,
+.padding-small>.col-lg-12:first-child {
+  padding-left: 15px;
+}
+
+.padding-small>.col-xs-1:last-child,
+.padding-small>.col-sm-1:last-child,
+.padding-small>.col-md-1:last-child,
+.padding-small>.col-lg-1:last-child,
+.padding-small>.col-xs-2:last-child,
+.padding-small>.col-sm-2:last-child,
+.padding-small>.col-md-2:last-child,
+.padding-small>.col-lg-2:last-child,
+.padding-small>.col-xs-3:last-child,
+.padding-small>.col-sm-3:last-child,
+.padding-small>.col-md-3:last-child,
+.padding-small>.col-lg-3:last-child,
+.padding-small>.col-xs-4:last-child,
+.padding-small>.col-sm-4:last-child,
+.padding-small>.col-md-4:last-child,
+.padding-small>.col-lg-4:last-child,
+.padding-small>.col-xs-5:last-child,
+.padding-small>.col-sm-5:last-child,
+.padding-small>.col-md-5:last-child,
+.padding-small>.col-lg-5:last-child,
+.padding-small>.col-xs-6:last-child,
+.padding-small>.col-sm-6:last-child,
+.padding-small>.col-md-6:last-child,
+.padding-small>.col-lg-6:last-child,
+.padding-small>.col-xs-7:last-child,
+.padding-small>.col-sm-7:last-child,
+.padding-small>.col-md-7:last-child,
+.padding-small>.col-lg-7:last-child,
+.padding-small>.col-xs-8:last-child,
+.padding-small>.col-sm-8:last-child,
+.padding-small>.col-md-8:last-child,
+.padding-small>.col-lg-8:last-child,
+.padding-small>.col-xs-9:last-child,
+.padding-small>.col-sm-9:last-child,
+.padding-small>.col-md-9:last-child,
+.padding-small>.col-lg-9:last-child,
+.padding-small>.col-xs-10:last-child,
+.padding-small>.col-sm-10:last-child,
+.padding-small>.col-md-10:last-child,
+.padding-small>.col-lg-10:last-child,
+.padding-small>.col-xs-11:last-child,
+.padding-small>.col-sm-11:last-child,
+.padding-small>.col-md-11:last-child,
+.padding-small>.col-lg-11:last-child,
+.padding-small>.col-xs-12:last-child,
+.padding-small>.col-sm-12:last-child,
+.padding-small>.col-md-12:last-child,
+.padding-small>.col-lg-12:last-child {
+  padding-right: 15px;
+}
+
+/** Datatables and Bootstrap Tables CSS **/
+
+.datatableButtonMenuDiv {
+  width: 70%;
+}
+
+table.table {
+  border-collapse: collapse;
+  border-bottom: 0;
+}
+
+table.table *, table.table *:before, table.table *:after {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+
+.datatable .clickable-row {
+  cursor: pointer;
+}
+
+.table > thead > tr > th {
+  border-top: 0;
+  border-bottom: 1px;
+  text-align: left;
+  background: none;
+}
+
+.table > thead > tr > th.text-right {
+  text-align: right;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td,
+.table-condensed > tr > th,
+.table-condensed > tr > th,
+.table-condensed > tr > th,
+.table-condensed > tr > td,
+.table-condensed > tr > td,
+.table-condensed > tr > td {
+    padding: 5px;
+}
+
+.table > thead > tr > th .fa-sort-asc,
+.table > thead > tr > th .fa-sort-desc {
+  display: none;
+}
+
+.table > thead > tr > th.sorting_asc .fa-sort-asc,
+.table > thead > tr > th.sorting_desc .fa-sort-desc {
+  display: inline-block;
+}
+
+.table > thead > tr > th .fa-unsorted {
+  opacity: .5;
+  display: inline-block;
+}
+
+.table > thead > tr > th.sorting_asc .fa-unsorted,
+.table > thead > tr > th.sorting_desc .fa-unsorted {
+  display: none;
+  opacity: 1;
+}
+
+table.table > tbody > tr > td,
+table.table > thead > tr > th,
+table.table > tr > td,
+table.table > tr > th {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.table > tbody > tr > td.checkbox,
+.table > thead > tr > th.checkbox,
+.table > tr > td.checkbox,
+.table > tr > th.checkbox {
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+table.dataTable.table td,
+table.dataTable.table > tbody > tr > td,
+table.table td {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  white-space: normal;
+  vertical-align: top;
+}
+
+table.dataTable i.edit-email-address {
+  cursor: pointer;
+}
+
+table.table a:hover,
+table.table a:active {
+  color: #000000 !important;
+}
+
+.datatable-info-row {
+  margin-top: 1.2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.datatable-primary .dataTables_paginate,
+.datatable-secondary .dataTables_paginate {
+  margin: 0 0 0 0;
+}
+
+.datatable-page-number {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.datatable-primary .dataTables_length,
+.datatable-secondary .dataTables_length {
+  height: 1.2rem;
+  line-height: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  float: none;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.datatable-primary .dataTables_info,
+.datatable-secondary .dataTables_info {
+  height: 1.2rem;
+  line-height: 1rem;
+  padding-top: 5px;
+  padding-bottom: 0;
+  width: 100%;
+  float: none;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.datatable tbody.override-datatable-widths td {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .dataTables_length {
+    text-align: right;
+  }
+
+  .dataTables_info {
+    text-align: right;
+  }
+
+}
+
+/** END of dataTables CSS **/
+
+/** Order/Select a Product Page CSS **/
+
+#product-list {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+
+#product-list h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/** END Order/Select a Product Page CSS **/
+
+/** Font Sizes **/
+
+#common-area-fluid .font-12 {
+  font-size: 1.2rem;
+}
+
+/** END of Font Sizes **/
+
+/** Order Wizard Styles **/
+
+#selectState .state-info {
+  padding-left: 20px;
+  margin-bottom: 3px;
+}
+
+#selectState .state-info .panel{
+  padding-left: 0;
+  margin-bottom: 0;
+  overflow: visible;
+}
+
+#selectState .state-info input {
+  margin-left: -20px;
+  margin-right: 7px;
+  vertical-align: bottom;
+}
+
+#selectState .state-info i {
+  vertical-align: bottom;
+  color: black;
+}
+
+#selectState .btn-xs {
+  margin-bottom: 2px;
+}
+
+#state-accordion .panel-heading {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#state-accordion .panel-heading h4 {
+  font-size: 1.3rem;
+}
+
+#state-accordion .panel-body .row,
+#country-accordion .panel-body .row {
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 1.2rem;
+}
+
+#country-accordion .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+#aliases .panel,
+#spouse-aliases .panel,
+#search-licenses .panel {
+  margin-bottom: 5px;
+}
+
+#applicant-address-form .address-names {
+  margin-top: 1.75rem;
+}
+
+.address-names .well {
+  padding-left: 50px;
+}
+
+.address-names .well input{
+  margin-left: -39px;
+  margin-right: 0;
+}
+
+.address-names .well > label {
+    margin-left: -39px;
+}
+
+.landlord-info {
+  margin-bottom: 5px;
+}
+/** END Order Wizard Styles **/
+
+/** Utilities Styles **/
+.button-menu-margin{
+  margin-bottom: 5px;
+}
+
+/** END Utilities Styles **/
+
+.rolodex-modal {
+  width: 720px;
+}
+
+
+
+/**
+ * Override the default primary background color
+ */
+.bg-primary {
+  background-color: #003854;
+}
+
+/**
+ * In form-horizontal, all control-lables get aligned to teh right automatically.
+ * Because of style specificity simpy adding text-left isn't enough to fix it.
+ * This style just creates enough specificity to regain the default of text-left
+ * in the situation
+ */
+.form-horizontal .control-label.text-left {
+  text-align: left;
+}
+
+/**
+ * Creates a half column offset to align things between one and two column layouts.
+ */
+@media (min-width: 768px) {
+  .col-sm-offset-half {
+    margin-left: 4.16666667%;
+  }
+}
+
+/**
+ * Puts a checkbox or radio on the same baseline as an h3 tag, used on client
+ * configuration page
+ */
+.form-horizontal label.h3-line {
+  margin-top: 18px;
+}
+
+/**
+ * Make checkboxes and radio buttons fill the same vertical space as text inputs
+ */
+section .form-group label.checkbox-inline,
+section .form-group label.radio-inline {
+  padding-bottom: 3px;
+}
+
+/**
+ * Adjust inline forms with mixed content so they don't fill more than the
+ * space or simplier field sets'
+ */
+section .form-inline label.checkbox-inline,
+section .form-inline label.radio-inline {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/**
+ * Override and override that causes spacing issues with mixed lines with
+ * checkboxes and text fields
+ *
+ * This feels very wrong, but it gets close
+ */
+section .form-inline label.checkbox-inline,
+section .form-inline label.radio-inline {
+  margin-bottom: -1px;
+  margin-top: 4px;
+}
+
+/**
+ * Line up text in select box with the inline text on the same line
+ */
+section .form-inline label.checkbox-inline select {
+  margin-top: -3px;
+}
+
+/**
+ * To match checkboxes and radios inside of modals to ones in general section
+ */
+section.form-horizontal .radio,
+section.form-horizontal .checkbox,
+section.form-horizontal .radio-inline,
+section.form-horizontal .checkbox-inline{
+  margin-bottom: 2px;
+}
+
+/**
+ * Fix for the alignment of the checkboxes and radios in a line
+ */
+section .radio-inline,
+section .form-inline .control-label {
+  vertical-align: baseline;
+}
+
+/**
+ * Text override Bootstrap colors
+ */
+.text-default {
+  color: #666;
+}
+
+.text-danger {
+  color: #8f0000;
+}
+
+/*.text-warning {
+  color: #FFC000;
+}*/
+
+.text-success {
+  color: #008f00;
+}
+
+/**
+ * Overwrite small color (darken) when on grey
+ */
+.panel-default .panel-heading .small {
+  color: #666;
+  font-size: 65% !important; /* restore overwritten font sizing */
+}
+
+.popover {
+  z-index: 1070; /* Default is 1010. Anything less than 1040 will put it below modals, 1050 for some modal content. */
+}
+
+.popover.right {
+  text-align: left;
+}
+
+/**
+ * To get inline field in a horizontal form
+ */
+.form-control-inline {
+  display: inline;
+  width: auto;
+}

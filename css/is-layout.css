@@ -1,0 +1,512 @@
+body {
+  xfont-family: Roboto,sans-serif;
+}
+
+/** HEADER STYLES **/
+
+#header {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  border-bottom: solid 2px;
+  position: relative;
+  z-index: 400;
+  width: 100%;
+  min-width: 0;
+  top: -2px;
+}
+
+#header .wrapper {
+  padding: 10px 5px 0 5px;
+  max-width: 1170px;
+  min-width: 750px;
+  width: 100%;
+  position: relative;
+  border-bottom: solid 2px;
+  top: 2px;
+}
+
+#header .container {
+  max-width: 1170px;
+  min-width: 740px; /* Change to 100% when we want full responsiveness smaller than 768px */
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+
+#header .row {
+  margin: 0;
+}
+
+#header *, #header *:before, #header *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#header .col-sm-2 {
+  width: 16.6667%;
+  position: relative;
+  float: left;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#header a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 0px;
+}
+
+#header .dropdown-menu a {
+  color: #333;
+  font-weight: normal;
+  padding: 3px 20px;
+}
+
+#header .dropdown-menu a:hover,
+#header .dropdown-menu a:active {
+  color: #333;
+}
+
+#header .header-logo-col {
+  padding: 0;
+}
+
+#header .header-logo-col a {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.header-vertical-spacer {
+  opacity: 0;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header-spacer-image {
+  opacity: 0;
+}
+
+.header-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -webkit-transform: translateY(-50%);
+  padding-bottom: 2px;
+}
+
+#header-search .navbar-form {
+  min-width: 360px;
+}
+
+#header-search .navbar-form {
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+#header-search .form-group {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+#header-search .form-control {
+  height: 26px;
+  width: 110px;
+  padding: 0px 8px;
+  line-height: 1.2;
+}
+
+#header-search .btn  {
+  padding: 2px 12px;
+}
+
+#userMenu {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+#userMenu .dropdown-menu {
+  z-index: 1000;
+  min-width: 12.5rem;
+}
+
+#userMenu li {
+  text-align: left;
+}
+
+#userDropdownButton:hover,
+#userDropdownButton:active {
+ text-decoration: none;
+ border: solid 1px #ccc;
+}
+
+
+#header nav {
+  margin: 8px 0 3px 0;
+  padding: 0;
+}
+
+.primary-nav-menu {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0px;
+  width: 100%;
+}
+
+.primary-nav-menu li {
+  float: left;
+  min-width: 1.5em;
+  padding: 0;
+  margin: 0 8px 0 5px;
+  text-align: center;
+}
+
+.primary-nav-menu li:first-child {
+  margin-left: 0;
+}
+
+.primary-nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.primary-nav-menu .navbar-toggle {
+  float: none;
+  margin-top: 0;
+}
+
+.primary-nav-menu a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1px 0px;
+  margin: 0;
+  width: 170px;
+  border-radius: 5px;
+  border: dotted 1px #ccc;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.primary-nav-menu a:hover,
+.primary-nav-menu li.active a {
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+
+
+/** LOGIN PAGE STYLES **/
+
+#login-container {
+  position: relative;
+  display: block;
+  max-width: 720px;
+  top: 20px;
+}
+
+#login-spacer-sm {
+  position: relative;
+  display: block;
+  height: 40px;
+}
+
+#login-spacer-lg {
+  position: relative;
+  display: block;
+  height: 100px;
+}
+
+.login-logo .img-responsive {
+  display: inline;
+}
+
+
+/** MAIN SECTION **/
+
+#content-section {
+  width: 100%;
+  max-width: 1170px;
+  min-width: 750px; /* Change to 100% when we want full responsiveness smaller than 768px */
+  margin: 0 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+#content-container {
+  padding: 0;
+  margin: 0 0 0 0px;
+  width: 100%;
+}
+
+#content-container>.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#nav2-col {
+  width: 18%;
+  position: relative;
+  float: left;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#nav2-col .collapse {
+  display: block; /* So the menu doesn't disappear when switching screen sizes after collapsing it on the menu */
+}
+
+#nav2.collapsing,
+#nav2.in
+ {
+  display: block!important; /* so the menu displays on small devices, has ot override hidden-sm and hidden-xs which use !important */
+}
+
+#content-col {
+  width: 81%;
+  position: static;
+  float: left;
+}
+
+#content-col.col-sm-12 {
+  width: 100%;
+}
+
+
+/** SECONDARY NAV STYLES **/
+
+#btn-nav2 {
+  display: none;
+}
+
+#btn-nav2 button {
+  border: solid 1px #ccc;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#btn-nav2 button:first-child {
+  width: 10rem;
+}
+
+#btn-nav2 .dropdown-toggle {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nav2 {
+  padding: 0;
+  margin-top: 0;
+  box-shadow: none;
+  border-left: 0;
+}
+
+#nav2 nav {
+  border-right:1px dotted #ccc;
+  min-height: 480px;
+}
+
+#nav2 .panel-heading {
+  background-color: #ccc;
+  border-bottom:1px solid #ccc;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 0;
+  font-size: 14px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#nav2 span {
+  font: bold .7em Roboto,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0 4px 0;
+  margin-left: 10px;
+}
+
+#nav2 ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#nav2 li {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+#nav2 a {
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #333;
+}
+
+#nav2 a:hover,
+#nav2 a:active,
+#nav2 li.active a:link,
+#nav2 li.active a:visited {
+  color: #111;
+  background-color: #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav2 hr {
+  border-top: dotted 1px #ccc;
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+.page-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+
+/** COMMON CONTENT STYLES **/
+
+#page-ins {
+  width: 100%;
+  max-width: 780px;
+}
+
+#content-col>#common-area {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+#page-title {
+  width: 100%;
+}
+
+#page-main {
+  width: 100%;
+}
+
+.btn-primary {
+  background-image: none;
+}
+
+section .order-summary {
+  font-size: 12px;
+}
+
+div .underline {
+  border-bottom: 1px solid black
+}
+
+#dragdrop,
+.drag-and-drop {
+  border: 2px solid #999;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 120px;
+  margin: 10px auto;
+  color: #999;
+}
+
+.drag-and-drop .column-headers {
+  color: #000;
+}
+
+#dragdrop.hover,
+.drag-and-drop.hover {
+  border: 2px dashed #00F200;
+  border-radius: 6px;
+}
+
+#dragdrop img,
+.drag-and-drop img {
+  display: block;
+  margin: 10px auto;
+}
+
+#dragdrop p,
+.drag-and-drop p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.drag-and-drop {
+  margin-bottom: 5px;
+  border: dashed 1px #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: auto;
+}
+
+.modal-dialog .drag-and-drop {
+  width: auto !important;
+}
+
+.modal-dialog input[type="file"].hidden {
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.drag-and-drop label[for='authAttachFile'] {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 10rem;
+}
+
+.drag-and-drop .delete-attachment {
+  padding-right: 0;
+  float: none;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.attachment-label {
+  white-space: nowrap;
+}
+
+.attachment-label .fade-right {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 79%;
+  text-align: center;
+  margin: 0; padding: 5px 30px 0 0;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to right, transparent 79%, white 87%);
+}
+
+.attachments-list .control-label,
+.attachments-list .form-group>div {
+  background-color: #fff;
+}

@@ -1,0 +1,277 @@
+/* --------------------------------------------------------------------------------
+
+   This is meant to be a repository for styles that are not direct overrides of 
+   bootstrap but rather other style and color customizations particular to instascreen
+   that are not yet capable of being overwritten by users but which might be at some
+   later date.
+
+   Can also include some general theme elements that are not overrides of bootstrap
+   and which will continue forward with the 3.0 version of instascreen.
+
+   -------------------------------------------------------------------------------- */
+
+/**
+ * Default treatment for a status block
+ * 
+ * Status block is similar to bootstrap's alert differences include 
+ * a fixed width, centered text, bold text, and vertical space.
+ */
+.status-block {
+  display: inline-block;
+  width:12em;
+  margin-bottom: 0;
+  padding: 0.5em 1.0em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #000;
+}
+
+.status-block-fluid {
+  width: auto;
+}
+
+.status-block.status-default {
+  color: #fff;
+  background-color: #999;
+  border-color: #969696;
+}
+
+.status-block.status-success {
+  background-color: #008f00;
+  border-color: #008f00;
+  color: #fff;
+}
+
+.status-block.status-warning {
+  background-color: #ff9500;
+  border-color: #ff9500;
+  color: #fff;
+}
+
+.status-block.status-danger {
+  background-color: #8f0000;
+  border-color: #8f0000;
+  color: #fff;
+}
+
+/**
+ * Status colors. Generally related to bootstrap defauls.
+ */
+.status-default {
+  color: #999;
+}
+
+.status-success {
+  color: #008f00;
+}
+
+.status-warning {
+  color: #ff9500;
+}
+
+.status-danger {
+  color: #8f0000;
+}
+
+/**
+ * Report Decision Colors
+ *
+ * These could eventually be customized colors by the cra
+ */
+.report-decision-approved {
+  color: #008f00;
+}
+
+.report-decision-declined {
+  color: #8f0000;
+}
+
+.report-decision-negative {
+  color: #00008f;
+}
+
+.report-decision-review {
+  color: #FFC000;
+}
+
+.report-decision-pending {
+  color: #666;
+}
+
+.report-decision-opt-out {
+  color: #f60;
+}
+
+.report-decision-pre-adverse {
+  color: #8f008f;
+}
+
+.report-decision-dispute {
+  color: #555;
+}
+
+.report-decision-conditional {
+  color: #005EB8;
+}
+.report-decision-placeholder {
+  color: #fff;
+}
+
+
+/*------------------------------------------------------------------------
+ * General new styles, these are not meant to be overwritten or customized
+ */
+
+
+/**
+ * Pannel Columns are to give space when panels are placed side by side in columns
+ * where you still want to maintain spacing on the walls of the columns.
+ * 
+ * Gutter is reduced to 20px instead of 30px to match the 20px gap under preceeding 
+ * elements on the page (if panel, otherwise it is 20 instead of standard 15px gap).
+ *
+ * This is an overly simplistic application of this idea, but works for now.
+ */
+
+@media (min-width: 768px) {
+  .panel-column-left > .row {
+    margin-right: -5px;
+  }
+
+  .panel-column-right > .row {
+    margin-left: -5px;
+  }
+}
+
+/**
+ * Default menus are left aligned to the head of the menu. This allows for flipping 
+ * that for buttons that are right aligned.
+ */
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+  text-align: left;
+}
+
+/**
+ * Style to remove list visualization on organizational lists.
+ */
+ul.organizational {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/**
+ * Styling to work accordion correctly with links
+ */
+.accordion h3 {
+  margin: 0;
+}
+
+/**
+ * Make xs buttons become sm buttons at xs display size. Mobile first means 
+ * overwritting the default and setting it back at larger sizes. 
+ * 
+ * Also treatment for the headers with buttons in them. As the buttons get larger
+ * give proper vertical space to header so it lines up with the button. Assumes
+ * that the header is an h3.
+ */
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 5px 10px;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 6px 12px;
+  font-size: 1.4rem;
+}
+
+.panel h3 {
+  line-height: 29px;
+  margin: 0px;
+}
+
+@media (min-width: 991px) {
+  .btn-xs,
+  .btn-group-xs > .btn {
+    padding: 1px 5px;
+  }
+  
+  .btn-sm,
+  .btn-group-sm > .btn {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+  
+  .panel h3 {
+    line-height: 21px;
+  }
+}
+
+/**
+ * Quick class for cursor
+ *
+ * Used on accordions where the title doesn't contain a link
+ */
+.clickable {
+  cursor: pointer;
+}
+
+
+/**
+* Charges table styles
+*/
+
+#charges-list-view-only td {
+	font-size: 1.2rem;
+}
+
+#view-charges-modal .modal-footer {
+  margin-top: 0;	
+}
+
+table.table-striped > tbody > tr:nth-child(odd).charge-total > td {
+	background-color: #fff;
+}
+
+#charges-list-view-only .table > tbody + tbody {
+	border-color: #999;
+}
+
+#charges-list-view-only table {
+	margin-bottom: 0;
+	table-layout: fixed;
+}
+
+#charges-list-view-only .charge-total td {
+	font-size: 1.3rem;
+}
+
+#charges-list-view-only .item-code {
+	word-wrap: break-word;
+	font-size: 1.1rem;
+}
+
+#charges-list-view-only .description {
+  font-size: 1.1rem;
+}
+
+/**
+* Audit Log styles
+*/
+
+.audit-log-text {
+	overflow: auto;
+	max-height: 50rem;
+}
+
+#audit-log-modal .modal-footer {
+	margin-top: 0;
+}
