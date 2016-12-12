@@ -1,4 +1,5 @@
 <?php
+    session_start();
 /**
  * Created by   PhpStorm.
  * User:        Micheal Mueller - MuellerTek
@@ -28,7 +29,7 @@ if ($_POST['formtype'] === 'reg-form'){
     {
         $reg = $mrs->register($first_name, $last_name, $username,$password, $email);
         if ($reg){
-            header('Location: login.html');
+            header('Location: login.php');
         }
     }
 }elseif ($_POST['formtype'] === 'login-form'){
@@ -38,32 +39,20 @@ if ($_POST['formtype'] === 'reg-form'){
         $password = $_POST['password'];
 
         $Loggedin = $mrs->Login($username, $password);
-
         if($Loggedin == false){
-            header('Location: /login.html');
-        }else{
-            echo '<h3>Welcome,' . $username . 'You Are Now Logged In.</h3><br>';
-            echo 'Not only is the username returned here but the role and user_id is as well, <br>Would you like to edit user <a href="edit.php?user_id='.$Loggedin['user_id'].'">'.$username.'</a> ?<br>Select Random Users - (for demonstration i have 6 records in the DB so this will randomly select 3)';
-            echo '<br><br>';
-            echo '<form role="form" action="route.php" method="post" autocomplete="off">
-        <input type="submit" name="selectRandom" class="btn btn-primary" value="Select Random Users">
-        <input type="hidden" id="rand-form" name="formtype" value="rand-form">
-    </form>';
+            header('Location: login.html');
+        }else {
+            $_SESSION['id'] = $Loggedin['id'];
+            $_SESSION['role'] = $Loggedin['role'];
+            $_SESSION['status'] = 'loggedin';
+
+            header('Location: index.php');
         }
     }
 }elseif ($_POST['formtype'] === 'edit-form' && $_POST['delete'] == 'DELETE'){
     $mrs->RemoveMember($_POST['user_id']);
 }elseif($_POST['formtype'] == 'edit-form' && $_POST['update'] == 'Update'){
     $mrs->UpdateMemberInfo($_POST['user_id'], $_POST['first_name'], $_POST['last_name'], $_POST['reference_number'], $_POST['role']);
-}elseif($_POST['formtype'] == 'rand-form'){
-    $rand = $mrs->GetRandom();
-    foreach($rand as $random)
-    {
-        echo '<br>';
-        echo 'First name: '.$random['first_name'].' Last Name: '.$random['last_name'];
-        echo '<br>';
-    }
-}
-else{
+}else{
     echo 'Something is REALLY WRONG! ';
 }

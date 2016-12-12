@@ -6,19 +6,21 @@
  * Date: 12/6/2016
  * Time: 8:13 PM
  */
+//require_once 'dompdf\autoload.inc.php';
+
 class mrsystem
 {
     public function DBConnect()
     {
-        $host = 'localhost';
+        $host = '107.180.47.62';
         $user = 'mrs_root';
         $testuser = 'root';
         $pass = 'AAdksfK8+dry';
         $testpass = '';
-        $DB = 'MRSystem';
+        $DB = 'mrsystem';
 
         try{
-            $mysqli = new mysqli($host, $testuser, $testpass, $DB);
+            $mysqli = new mysqli($host, $user, $pass, $DB);
         }catch(Exception $e){
             return array('status'=>'Could not connect to '.$DB.' on '.$host);
         }
@@ -39,46 +41,37 @@ class mrsystem
         }
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO users (user_name, password, email, role) VALUES("'.$username.'", "'.$password.'", "'.$email.'", '.$role.')';
-        if ($mysqli->query($sql)){
-            $last_id = $mysqli->insert_id;
-            $sql2 = 'INSERT INTO members (user_id, first_name, last_name, reference_number, date_created) VALUES("'.$last_id.'", "'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW())';
-            if($mysqli->query($sql2)){
-                $mysqli->close();
-                return true;
-            }
+        $sql = 'INSERT INTO members (first_name, last_name, reference_number, date_created, user_name, password, email, role) VALUES("'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW(), "'.$username.'", "'.$password.'", "'.$email.'", "'.$role.'")';
+        if (!$result = $mysqli->query($sql)){
+            
+            return false;
         }
+
         $mysqli->close();
-        return false;
+        return true;
     }
     public function Login($username, $password)
     {
-    	$mysqli = self::DBConnect();
-
+        $mysqli = self::DBConnect();
         $username = $mysqli->escape_string($username);
-
-    	$sql = 'SELECT password FROM users WHERE user_name="'. $username.'"';
-    	if(!$result = $mysqli->query($sql)){
-            $mysqli->close();
+        $sql = 'SELECT id, password, role FROM members WHERE user_name="'. $username.'"';
+        if(!$result = $mysqli->query($sql)){
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         while($row = $result->fetch_assoc()){
-    	    $pass = $row['password'];
+            $pass = $row['password'];
+            $id = $row['id'];
+            $role = $row['role'];
         }
-    	$verified = password_verify($password, $pass);
+        $verified = password_verify($password, $pass);
 
-    	$sql2 = 'SELECT id, role FROM users WHERE user_name="'. $username.'"';
-    	if($verified){
-    	    $result2 = $mysqli->query($sql2);
-    	    while($row = $result2->fetch_assoc()){
-    	        $role = $row['role'];
-    	        $id = $row['id'];
-            }
+        if($verified){
             $mysqli->close();
-    	    return array('user_id' => $id, 'role' => $role);
+            return array('user_id' => $id, 'role' => $role);
         }else{
             $mysqli->close();
-    	    return false;
+            return false;
         }
     }
     public function GetMemberInfo($user_id)
@@ -86,22 +79,32 @@ class mrsystem
         //Reference has to be all numeric!
         $mysqli = self::DBConnect();
 
-        $sql = 'SELECT * FROM members WHERE user_id="'.$user_id.'"';
+        $sql = 'SELECT * FROM members WHERE id="'.$user_id.'"';
         if(!$result = $mysqli->query($sql)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         $row = $result->fetch_assoc();
-            $sql2 = 'SELECT role FROM users WHERE id="'.$user_id.'"';
-        if(!$result2 = $mysqli->query($sql2)){
-            $mysqli->close();
-            die('There was an error running the query [' . $mysqli->error . ']');
-        }
-        $row2 = $result2->fetch_assoc();
-        $row['role'] = $row2['role'];
-
         $mysqli->close();
         return $row;
+    }
+
+    public function GetMembers($perpage)
+    {
+        $mysqli = self::DBConnect();
+
+        $sql = 'SELECT * FROM members LIMIT '.$perpage;
+        if(!$result = $mysqli->query($sql)){
+
+            die('There was an error running the query [' . $mysqli->error . ']');
+        }
+        foreach($result as $row)
+        {
+            $members[] = $row;
+        }
+
+        $mysqli->close();
+        return $members;
     }
 
     public function UpdateMemberInfo($user_id, $first_name, $last_name, $reference_number, $role)
@@ -113,14 +116,9 @@ class mrsystem
         $reference_number = is_numeric($mysqli->escape_string($reference_number));
         $role = is_numeric($mysqli->escape_string($role));
 
-        $sql = 'UPDATE members SET first_name="'.$first_name.'", last_name="'.$last_name.'", reference_number="'.$reference_number.'" WHERE user_id="'.$user_id.'"';
+        $sql = 'UPDATE members SET first_name="'.$first_name.'", last_name="'.$last_name.'", reference_number="'.$reference_number.'", role="'.$role.'" WHERE id="'.$user_id.'"';
         if(!$result = $mysqli->query($sql)){
-            $mysqli->close();
-            die('There was an error running the query [' . $mysqli->error . ']');
-        }
-        $sql2 = 'UPDATE users SET role="'.$role.'"';
-        if(!$result2 = $mysqli->query($sql2)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         $mysqli->close();
@@ -131,14 +129,9 @@ class mrsystem
     {
         $mysqli = self::DBConnect();
 
-        $sql = 'DELETE FROM members WHERE user_id="'.$user_id.'"';
+        $sql = 'DELETE FROM members WHERE id="'.$user_id.'"';
         if(!$result = $mysqli->query($sql)){
-            $mysqli->close();
-            die('There was an error running the query [' . $mysqli->error . ']');
-        }
-        $sql2 = 'DELETE FROM users WHERE id="'.$user_id.'"';
-        if(!$result2 = $mysqli->query($sql2)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         $mysqli->close();
@@ -161,26 +154,22 @@ class mrsystem
         }
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO users (user_name, password, email, role) VALUES("'.$username.'", "'.$password.'", "'.$email.'", '.$role.')';
-        if ($mysqli->query($sql)){
-            $last_id = $mysqli->insert_id;
-            $sql2 = 'INSERT INTO members (user_id, first_name, last_name, reference_number, date_created) VALUES("'.$last_id.'", "'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW())';
-            if($mysqli->query($sql2)){
-                $mysqli->close();
-                return true;
-            }
+        $sql = 'INSERT INTO members (first_name, last_name, reference_number, date_created, user_name, password, email, role) VALUES("'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW(), "'.$username.'", "'.$password.'", "'.$email.'", "'.$role.'"';
+        if (!$result = $mysqli->query($sql)){
+            $mysqli->close();
+            return false;
         }
         $mysqli->close();
-        return false;
+        return true;
     }
 
-    public function GetRandom($num = 3)
+    public function GetRandom($num = 4)
     {
         $mysqli = self::DBConnect();
 
         $count = 'SELECT COUNT(*) FROM members';
         if(!$memcount = $mysqli->query($count)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         //check if the entered number is able to be fetched.
@@ -188,23 +177,22 @@ class mrsystem
             $members = $item;
         }
         if($num > $members){
-            $mysqli->close();
+            
             die('you must go back and select a number equal to or less then '.$memcount);
         }
 
-        $sql = 'SELECT * FROM members ORDER BY RAND() LIMIT '.$num;
+        $sql = 'SELECT * 
+                FROM members
+                WHERE date_selected IS NULL 
+                ORDER BY RAND( ) 
+                LIMIT '.$num;
 		if(!$results = $mysqli->query($sql)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         foreach($results as $row)
         {
-            if ($row['date_selected'] == null)
-            {
-                $selected[] = $row;
-            }else{
-                //need to figure out how to tell if its been 1 month since last selection.
-            }
+            $selected[] = $row;
         }
         $mysqli->close();
 		return $selected;
@@ -214,7 +202,7 @@ class mrsystem
         $mysqli = self::DBConnect();
         $sql = 'SELECT * FROM members WHERE date_selected !=null';
         if($results = $mysqli->query($sql)){
-            $mysqli->close();
+            
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         foreach($results as $row){
@@ -225,14 +213,38 @@ class mrsystem
     }
     public function Export2PDF($selected, $from)
     {
-        if($from === 'viewexport')
-        {
+        $dompdf = new \Dompdf\Dompdf();
 
+        if($from === 'viewexport'){
+            $dompdf->loadHtmlFile('export.html');
+            $dompdf->render();
         }elseif($from === 'modexport')
         {
 
         }else{
             return false;
         }
+    }
+    public function Pagination()
+    {
+        $mysqli = self::DBConnect();
+        $sql = 'SELECT COUNT(*) FROM members';
+        //get the record count
+        try {
+            $rowCount = $mysqli->query($sql);
+        }catch(Exception $e)
+        {
+            die('There was an error! '.$e .'<br><br>' .$mysqli->error);
+        }
+        //math to figure out how many pages is required for pagination
+        $rowCount = $rowCount->fetch_row();
+        $perPage = 50;
+        $pages = $rowCount[0] / $perPage;
+        if($pages < 1)
+        {
+            $pages = 1;
+        }
+
+        return array('pages'=> $pages, 'perpage' => $perPage);
     }
 }
