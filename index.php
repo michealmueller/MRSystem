@@ -1,5 +1,6 @@
 <?php
     require_once 'MRSystem.php';
+    date_default_timezone_set('UTC');
     /**
      * Created by   PhpStorm.
      * User:        Micheal Mueller - MuellerTek
