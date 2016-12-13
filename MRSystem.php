@@ -6,7 +6,7 @@
  * Date: 12/6/2016
  * Time: 8:13 PM
  */
-//require_once 'dompdf\autoload.inc.php';
+
 
 class mrsystem
 {
@@ -67,10 +67,9 @@ class mrsystem
         $verified = password_verify($password, $pass);
 
         if($verified){
-            $mysqli->close();
+
             return array('user_id' => $id, 'role' => $role);
         }else{
-            $mysqli->close();
             return false;
         }
     }
@@ -139,22 +138,46 @@ class mrsystem
 
     }
 
-    public function CreateMember($first_name, $last_name, $username, $password, $confirm_password, $email, $role='1', $reference_number='0')
+    public function CreateMember($first_name, $last_name, $reference_number='0', $role=1)
+    {
+        $mysqli = self::DBConnect();
+        //escape input except for password as its going to be hashed anyhow.
+        $first_name = $mysqli->escape_string($first_name);
+        $last_name = $mysqli->escape_string($last_name);
+
+        if($reference_number = '' | $reference_number = 0) {
+            for ($i = 0; $i <= 8; $i++) {
+                $reference_number .= mt_rand(0, 9);
+            }
+        }
+
+        //$password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = 'INSERT INTO members (first_name, last_name, reference_number, date_created, role) VALUES("'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW(), "'.$role.'"';
+        if (!$result = $mysqli->query($sql)){
+            $mysqli->close();
+            return false;
+        }
+        $mysqli->close();
+        return true;
+    }
+    public function CreateManager($first_name, $last_name, $username, $password, $reference_number='0', $role=2)
     {
         $mysqli = self::DBConnect();
         //escape input except for password as its going to be hashed anyhow.
         $first_name = $mysqli->escape_string($first_name);
         $last_name = $mysqli->escape_string($last_name);
         $username = $mysqli->escape_string($username);
-        $email = $mysqli->escape_string($email);
 
-        $reference_number = '';
-        for($i=0;$i<=8; $i++){
-            $reference_number .= mt_rand(0,9);
+        if($reference_number = '' || $reference_number = 0) {
+            for ($i = 0; $i <= 8; $i++) {
+                $reference_number .= mt_rand(0, 9);
+            }
         }
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO members (first_name, last_name, reference_number, date_created, user_name, password, email, role) VALUES("'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW(), "'.$username.'", "'.$password.'", "'.$email.'", "'.$role.'"';
+        $sql = 'INSERT INTO members 
+                (first_name, last_name, reference_number, date_created, user_name, password, role) 
+                VALUES("'.$first_name.'", "'.$last_name.'", "'.$reference_number.'", NOW(), "'.$username.', '.$password.', '.$role.'"';
         if (!$result = $mysqli->query($sql)){
             $mysqli->close();
             return false;
@@ -167,7 +190,10 @@ class mrsystem
     {
         $mysqli = self::DBConnect();
 
-        $count = 'SELECT COUNT(*) FROM members';
+        $count = 'SELECT COUNT(*) 
+                  FROM members 
+                  WHERE date_selected 
+                  IS NOT null';
         if(!$memcount = $mysqli->query($count)){
             
             die('There was an error running the query [' . $mysqli->error . ']');
@@ -194,36 +220,44 @@ class mrsystem
         {
             $selected[] = $row;
         }
-        $mysqli->close();
 		return $selected;
     }
+    public function MarkSelected($id)
+    {
+        $mysqli = self::DBConnect();
+        $sql = 'UPDATE members 
+                SET date_selected=NOW() 
+                WHERE id='.$id;
+        if(!$result = $mysqli->query($sql)){
+            die('Could Not Mark Users as Selected. [' . $mysqli->error . ']');
+        }
+        return true;
+    }
+
     public function ViewSelected()
     {
         $mysqli = self::DBConnect();
-        $sql = 'SELECT * FROM members WHERE date_selected !=null';
-        if($results = $mysqli->query($sql)){
+        $sql = 'SELECT * FROM members WHERE date_selected IS NOT null';
+        if(!$results = $mysqli->query($sql)){
             
             die('There was an error running the query [' . $mysqli->error . ']');
         }
         foreach($results as $row){
             $selected[] = $row;
         }
-        $mysqli->close();
         return $selected;
     }
-    public function Export2PDF($selected, $from)
+    public function Export2PDF($selected)
     {
-        $dompdf = new \Dompdf\Dompdf();
+        $dompdf = new Dompdf();
+        $options = new \Dompdf\Options();
+        $options->set('isHTML5ParserEnabled', true);
+        $dompdf->loadHtmlFile('export.php');
+        $dompdf->render();
+        $dompdf->stream();
 
-        if($from === 'viewexport'){
-            $dompdf->loadHtmlFile('export.html');
-            $dompdf->render();
-        }elseif($from === 'modexport')
-        {
+        return true;
 
-        }else{
-            return false;
-        }
     }
     public function Pagination()
     {

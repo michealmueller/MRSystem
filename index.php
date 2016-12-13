@@ -8,24 +8,26 @@
      * Time:        8:55 AM
      */
 session_start();
-
+ob_start();
 $mrs = new mrsystem();
 
-if($_POST['token']) {
+if(isset($_POST['token'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $Loggedin = $mrs->Login($username, $password);
-    if ($Loggedin == false) {
-        header('Location: login.html');
+    $login = $mrs->Login($username, $password);
+    if ($login == false) {
+        header('Location: login.php');
     } else {
         $_SESSION['user_info'] = array(
             'username'  => $username,
-            'id'        => $Loggedin['user_id'],
-            'role'      => $Loggedin['role'],
+            'id'        => $login['user_id'],
+            'role'      => $login['role'],
             'status'    => 1,
         );
     }
+}elseif(isset($_SESSION['user_info']['status']) && $_SESSION['user_info']['status'] !== 1){
+    header('Location: login.php');
 }
 
 if($_SESSION['user_info']['status'] !== 1)
@@ -71,7 +73,12 @@ if($_SESSION['user_info']['status'] !== 1)
         <p><h3>Welcome <?php echo $_SESSION['user_info']['username']; ?> You Are Now Logged In.</h3></p>
     </div>
     <div class="col-md-6">
-        <p class="pull-right"><a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a></p>
+        <p class="pull-right">
+            <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
+            <a href="createManager.php"><button class=" btn-success">Create New Manager</button></a>
+            <a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a>
+            <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
+        </p>
     </div>
         <hr>
     <div class="col-md-4 " align="center">
@@ -88,11 +95,8 @@ if($_SESSION['user_info']['status'] !== 1)
         <ul class="pagination">
         <?php
             $pagination = $mrs->Pagination();
-            for($i=1;$i<=$pagination['pages'];$i++)
-            {
-                echo '<li><a href="#">'.$i.'</a></li>';
-            }
         ?>
+            <a href="index.php?viewSelected=1&export=1"><button class="btn btn-primary">Export Selected Members</button></a>
         </ul>
     </div>
     <div class="col-md-12 table-responsive">
@@ -103,9 +107,15 @@ if($_SESSION['user_info']['status'] !== 1)
                 <th>LastName</th>
                 <th>Reference Number</th>
                 <th>Date Last Selected</th>
+                <th>Modify</th>
             </tr>
             <?php
-            $members = $mrs->GetMembers($pagination['perpage']);
+                if(isset($_GET['viewSelected']) && $_GET['viewSelected'] == 1){
+                    $members = $mrs->ViewSelected();
+                }else{
+                    $members = $mrs->GetMembers($pagination['perpage']);
+                }
+
             foreach ($members as $member)
             {
                 echo '<tr>';
@@ -124,6 +134,9 @@ if($_SESSION['user_info']['status'] !== 1)
                     echo '<td>';
                     echo $member['date_selected'];
                     echo '</td>';
+                    echo '<td>';
+                    echo '<div><a href="edit.php?user_id='.$member['id'].'"><div class="glyphicon glyphicon-edit"></div></a> &nbsp;|&nbsp; <a href="route.php?deluser=1&user_id='.$member['id'].'"><div class="glyphicon glyphicon-remove"></div></a></div>';
+                    echo '</td>';
                 echo '</tr>';
 
             }
@@ -134,3 +147,28 @@ if($_SESSION['user_info']['status'] !== 1)
 </div>
 </body>
 </html>
+<?php
+    $_SESSION['content'] = ob_get_contents();
+    $contentOrig = ob_get_clean();
+
+    require_once 'lib/html2pdf/vendor/autoload.php';
+
+    if(isset($_GET['export']) && $_GET['export'] == 1) {
+
+
+        preg_match_all('|(.*table-responsive">)([\s\S]*)|xi', $_SESSION['content'], $output);
+        $content = '<html><body><div class="container">'.$output[0][0];
+
+
+        $_SESSION['content'] = $content;
+
+        $html2pdf = new \Spipu\Html2Pdf\Html2Pdf('P', 'A4', 'en');
+        $html2pdf->setDefaultFont('courier');
+        $html2pdf->writeHTML($_SESSION['content']);
+        if($html2pdf->Output('Selected_Users.pdf','D') == true){
+            header('Location: index.php');
+        }
+    }
+
+    echo $contentOrig;
+?>

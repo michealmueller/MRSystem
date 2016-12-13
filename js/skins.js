@@ -194,7 +194,7 @@ function bustFrames()
 	  ];
 	  for (var i = 0; i < exceptionList.length; i ++)
 	  {
-		//Use == 0 Otherwise this logic can be defeated by using a link such as mylink.com/create.html#/formi9/index.taz
+		//Use == 0 Otherwise this logic can be defeated by using a link such as mylink.com/createMember.php#/formi9/index.taz
 	    if(window.location.pathname.indexOf(exceptionList[i]) == 0)
 	    {
 	      return;

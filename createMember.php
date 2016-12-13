@@ -1,7 +1,11 @@
+<?php
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>C3 Intelligence, Inc. - Login</title>
+    <title>C3 Intelligence, Inc.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 
@@ -26,7 +30,7 @@
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
 
 
-    <link rel="stylesheet" type="text/css" href="/css/da_skin.css">
+    <link rel="stylesheet" type="text/css" href="/css/da_net_skin.css">
 
     <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="/js/prototype-1.7.js"></script>
@@ -57,33 +61,6 @@
 <div class="well well-primary">
 <form role="form" action="route.php" method="post" autocomplete="off">
     <div class="form-group">
-        <label for="l-name">
-            <strong>Username:</strong>
-        </label>
-        <span class="pull-right">
-    </span>
-        <input id="username" name="username" class="form-control" type="text" tabindex="1" maxlength="48" value="">
-    </div>
-
-    <div class="form-group">
-        <label for="l-pass">
-            <strong>Password:</strong>
-        </label>
-        <span class="pull-right">
-    </span>
-        <input id="password" name="password" class="form-control" type="password" tabindex="2" maxlength="32">
-    </div>
-
-    <div class="form-group">
-        <label for="l-pass">
-            <strong>Confirm Password:</strong>
-        </label>
-        <span class="pull-right">
-    </span>
-        <input id="cofirm_password" name="confirm_password" class="form-control" type="password" tabindex="2" maxlength="32">
-    </div>
-
-    <div class="form-group">
         <label for="l-pass">
             <strong>First Name:</strong>
         </label>
@@ -103,11 +80,11 @@
 
     <div class="form-group">
         <label for="l-pass">
-            <strong>E-mail:</strong>
+            <strong>Reference Number:</strong>
         </label>
         <span class="pull-right">
     </span>
-        <input id="email" name="email" class="form-control" type="text" tabindex="2" maxlength="32">
+        <input id="reference_number" name="reference_number" class="form-control" type="text" tabindex="2" maxlength="32">
     </div>
 
     <div class="text-center">
