@@ -281,4 +281,15 @@ class mrsystem
 
         return array('pages'=> $pages, 'perpage' => $perPage);
     }
+
+    public function Import($array)
+    {
+        if(is_array($array))
+        {
+            foreach($array as $item){
+                $exploded[] = explode($item, ' ');
+                //todo:: figure this shit out lol
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@ session_start();
 ob_start();
 $mrs = new mrsystem();
 
-if(isset($_POST['token'])) {
+if(isset($_POST['token']) && $_SESSION['user_info']['status'] == 1) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -30,11 +30,11 @@ if(isset($_POST['token'])) {
 }elseif(isset($_SESSION['user_info']['status']) && $_SESSION['user_info']['status'] !== 1){
     header('Location: login.php');
 }
-
+/*
 if($_SESSION['user_info']['status'] !== 1)
 {
     header("Location: login.php");
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,6 +77,7 @@ if($_SESSION['user_info']['status'] !== 1)
         <p class="pull-right">
             <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
             <a href="createManager.php"><button class=" btn-success">Create New Manager</button></a>
+            <a href="import.php"><button class=" btn-warning">Import Users</button></a>
             <a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a>
             <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
         </p>
