@@ -1,6 +1,9 @@
 <?php
     session_start();
-
+    /*if($_SESSION['user_info']['role'] !== '3')
+    {
+        die('you do not have access to this, please click <a href="index.php">HERE</a>to return');
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,40 +62,40 @@
 </head>
 <body>
 <div class="well well-primary">
-<form role="form" action="route.php" method="post" autocomplete="off">
-    <div class="form-group">
-        <label for="l-pass">
-            <strong>First Name:</strong>
-        </label>
-        <span class="pull-right">
+    <form role="form" action="route.php" method="post" autocomplete="off">
+        <div class="form-group">
+            <label for="user_name">
+                <strong>User Name:</strong>
+            </label>
+            <span class="pull-right">
     </span>
-        <input id="first_name" name="first_name" class="form-control" type="text" tabindex="2" maxlength="32">
-    </div>
+            <input id="user_name" name="user_name" class="form-control" type="text" tabindex="2" maxlength="32">
+        </div>
 
-    <div class="form-group">
-        <label for="l-pass">
-            <strong>Last Name:</strong>
-        </label>
-        <span class="pull-right">
+        <div class="form-group">
+            <label for="password">
+                <strong>Password:</strong>
+            </label>
+            <span class="pull-right">
     </span>
-        <input id="last_name" name="last_name" class="form-control" type="text" tabindex="2" maxlength="32">
-    </div>
+            <input id="password" name="password" class="form-control" type="password" tabindex="2" maxlength="32">
+        </div>
 
-    <div class="form-group">
-        <label for="l-pass">
-            <strong>Reference Number:</strong>
-        </label>
-        <span class="pull-right">
+        <div class="form-group">
+            <label for="role">
+                <strong>Role</strong>&nbsp;<small>1:user, 2:moderator, 3:Admin</small>
+            </label>
+            <span class="pull-right">
     </span>
-        <input id="reference_number" name="reference_number" class="form-control" type="text" tabindex="2" maxlength="32">
-    </div>
+            <input id="role" name="role" class="form-control" type="number" tabindex="3" maxlength="1">
+        </div>
 
-    <div class="text-center">
-        <input type="submit" class="btn btn-primary" value="Register" tabindex="4">
-    </div>
-    <input type="hidden" id="token" name="token" value="3u4s649ekh4of0q372ppob2lhl9b06vdmoin">
-    <input type="hidden" id="reg-form" name="formtype" value="reg-form">
-</form>
+        <div class="text-center">
+            <input type="submit" class="btn btn-primary" value="Register" tabindex="4">
+        </div>
+        <input type="hidden" id="token" name="token" value="3u4s649ekh4of0q372ppob2lhl9b06vdmoin">
+        <input type="hidden" id="reg-form" name="formtype" value="create-user">
+    </form>
 </div>
 </body>
 </html>

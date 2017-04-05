@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>mrs_root</user-name>
+      <introspection-schemas>*:MRSystem</introspection-schemas>
       <resolve-scope>MRSystem:</resolve-scope>
+      <unqualified-resolve-schemas>MRSystem:</unqualified-resolve-schemas>
     </data-source>
     <data-source name="mrsystem@localhost" uuid="da6822ad-ff22-4b65-9fe0-2921965a8fd7">
       <database-info product="MySQL" version="5.7.14" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
@@ -19,7 +21,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:mrsystem</introspection-schemas>
       <resolve-scope>mrsystem:</resolve-scope>
+      <unqualified-resolve-schemas>mrsystem:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

@@ -52,7 +52,7 @@
     <div class="col-md-6">
         <p class="pull-right">
             <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
-            <a href="createManager.php"><button class=" btn-success">Create New Manager</button></a>
+            <a href="createuser.php"><button class=" btn-success">Create New Manager</button></a>
             <a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a>
             <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
         </p>

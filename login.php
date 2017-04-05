@@ -80,10 +80,17 @@
 
         <!-- Login Form -->
         <div class="col-sm-5">
-
-
-
             <div class="well well-primary">
+                <?php
+                    if(isset($_SESSION['status']) && $_SESSION['status'] == 1){
+                        echo '
+                            <div class="alert alert-danger">
+                                <button class="close" data-close="alert"></button>
+                                <span> Incorrect Login, Correct the issue and try again!</span>
+                            </div>
+                              ';
+                    }
+                ?>
                 <script type="text/javascript">
                     jQuery(function ($) {
                         $('form').focusFirstVisible();

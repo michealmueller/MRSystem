@@ -11,8 +11,7 @@
 session_start();
 ob_start();
 $mrs = new mrsystem();
-
-if(isset($_POST['token']) && $_SESSION['user_info']['status'] == 1) {
+if(isset($_POST['token'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -71,14 +70,13 @@ if($_SESSION['user_info']['status'] !== 1)
 <body onload="onloadExecute()" onunload="onunloadExecute()">
 <div class="container-fluid">
     <div class="col-md-6">
-        <p><h3>Welcome <?php echo $_SESSION['user_info']['username']; ?> You Are Now Logged In.</h3></p>
+        <p><h3>Welcome <?php if(isset($_SESSION['user_info']['username'])){echo $_SESSION['user_info']['username'];}else{echo 'Admin';} ?> You Are Now Logged In.</h3></p>
     </div>
     <div class="col-md-6">
         <p class="pull-right">
             <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
-            <a href="createManager.php"><button class=" btn-success">Create New Manager</button></a>
             <a href="import.php"><button class=" btn-warning">Import Users</button></a>
-            <a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a>
+            <a href="edit.php?user_id=<?php if(isset($_SESSION['user_info']['username'])){echo $_SESSION['user_info']['username'];}else{echo 'Admin';} ?>"><button class="btn-warning">Edit Account</button></a>
             <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
         </p>
     </div>

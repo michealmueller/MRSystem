@@ -23,14 +23,8 @@ if (isset($_POST['formtype']) && $_POST['formtype'] === 'select-form'){
     }
 }elseif (isset($_POST['formtype']) && $_POST['formtype'] === 'edit-form' && $_POST['delete'] == 'DELETE'){
     $mrs->RemoveMember($_POST['user_id']);
-}elseif(isset($_POST['formtype']) && $_POST['formtype'] == 'edit-form' && $_POST['update'] == 'Update'){
-    $mrs->UpdateMemberInfo($_POST['user_id'], $_POST['first_name'], $_POST['last_name'], $_POST['reference_number'], $_POST['role']);
-}elseif((isset($_POST['formtype'])) && $_POST['formtype'] === 'reg-form'){
-    if($mrs->CreateMember($_POST['first_name'], $_POST['last_name'], $_POST['reference_number'],$_POST['role'])) {
-        header("Location: index.php");
-    }
-}elseif(isset($_POST['formtype']) && $_POST['formtype'] === 'manager-reg-form'){
-    if($mrs->CreateMember($_POST['first_name'], $_POST['last_name'], $_POST['user_name'], $_POST['password'], $_POST['reference_number'])) {
+}elseif(isset($_POST['formtype']) && $_POST['formtype'] === 'create-user'){
+    if($mrs->Register($_POST['user_name'], $_POST['password'], $_POST['role'])) {
         header("Location: index.php");
     }
 }elseif(isset($_GET['logout']) && $_GET['logout'] == 1){
