@@ -94,7 +94,7 @@
             <input type="submit" class="btn btn-primary" value="Register" tabindex="4">
         </div>
         <input type="hidden" id="token" name="token" value="3u4s649ekh4of0q372ppob2lhl9b06vdmoin">
-        <input type="hidden" id="reg-form" name="formtype" value="create-user">
+        <input type="hidden" id="reg-form" name="formtype" value="reg-admin">
     </form>
 </div>
 </body>

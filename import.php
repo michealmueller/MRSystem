@@ -56,8 +56,6 @@
     </div>
     <div class="col-md-6">
         <p class="pull-right">
-            <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
-            <a href="createuser.php"><button class=" btn-success">Create New Manager</button></a>
             <a href="import.php"><button class=" btn-warning">Import Users</button></a>
             <a href="edit.php?user_id=<?php echo $_SESSION['user_info']['id'] ?>"><button class="btn-warning">Edit Account</button></a>
             <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
@@ -66,10 +64,11 @@
     <div class="col-md-12">
         <hr>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 form-group">
         <form role="form" action="route.php?import=1" method="post" autocomplete="off" class="form-inline">
-            <h3><label for="import" >Select File</label></h3>
+            <h3><label for="import"  >Select File</label></h3>
             <input type="file" id="fileImport" name="import" class="form-control">
+            <input type="checkbox" name="deleteall" value="checked">Delete <b><u>ALL</u></b> Current Users?
             <input type="submit" class="btn btn-primary" id="Import" name="Import" value="Import">
         </form>
     </div>

@@ -1,10 +1,11 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: msqua
- * Date: 12/6/2016
- * Time: 8:13 PM
+ * Created by   PhpStorm.
+ * User:        Micheal Mueller - MuellerTek
+ * Web:         http://www.MuellerTek.com
+ * Date:        4/05/2017
+ * Time:        8:55 AM
  */
 
 
@@ -51,11 +52,27 @@ class mrsystem
         $mysqli->close();
         return true;
     }
+    public function Register_Admin($username, $password, $role=2)
+    {
+        $mysqli = self::DBConnect();
+        //escape input
+        $username= $mysqli->escape_string($username);
+        $password = password_hash($password, PASSWORD_BCRYPT);
+
+        $sql = 'INSERT INTO admin (username, password, role) VALUES("'.$username.'","'.$password.'","'.$role.'")';
+        if (!$result = $mysqli->query($sql)){
+
+            return false;
+        }
+
+        $mysqli->close();
+        return true;
+    }
     public function Login($username, $password)
     {
         $mysqli = self::DBConnect();
         $username = $mysqli->escape_string($username);
-        $sql = 'SELECT id, password, role FROM users WHERE user_name="'. $username.'"';
+        $sql = 'SELECT id, password, role FROM admin WHERE username="'. $username.'"';
         if(!$result = $mysqli->query($sql)){
             
             die('There was an error running the query [' . $mysqli->error . ']');
@@ -75,11 +92,35 @@ class mrsystem
             return false;
         }
     }
-    public function Getmembers($perpage)
+    public function GetMemberInfo($user_id, $role)
+    {
+        //Reference has to be all numeric!
+        $mysqli = self::DBConnect();
+
+        if($role == 3){
+            $sql = 'SELECT * FROM admin WHERE id="'.$user_id.'"';
+        }else{
+            $sql = 'SELECT * FROM users WHERE id="'.$user_id.'"';
+        }
+
+        if(!$result = $mysqli->query($sql)){
+
+            die('There was an error running the query [' . $mysqli->error . ']');
+        }
+        $row = $result->fetch_assoc();
+        $mysqli->close();
+        return $row;
+    }
+    public function Getmembers($perpage, $pool='enter_default_pool')
     {
         $mysqli = self::DBConnect();
 
-        $sql = 'SELECT * FROM users LIMIT '.$perpage;
+        if($pool !== 'enter_default_pool')
+        {
+            $sql = 'SELECT * FROM users WHERE drug_pool="'.$pool.'"';
+        }else{
+            $sql = 'SELECT * FROM users LIMIT '.$perpage;
+        }
         if(!$result = $mysqli->query($sql)){
 
             die('There was an error running the query [' . $mysqli->error . ']');
@@ -107,15 +148,13 @@ class mrsystem
 
     }
 
-    public function GetRandom($num = 4)
+    public function GetRandom($num = 4, $pool='enter_default_pool')
     {
         $mysqli = self::DBConnect();
 
         $count = 'SELECT COUNT(*) 
                   FROM users 
-                  WHERE date_selected 
-                  IS NOT null 
-                  AND role = 1';
+                  WHERE excluded = 0 AND role = 1';
         if(!$memcount = $mysqli->query($count)){
             
             die('There was an error running the query [' . $mysqli->error . ']');
@@ -131,12 +170,10 @@ class mrsystem
 
         $sql = 'SELECT * 
                 FROM users
-                WHERE date_selected IS NULL 
-                ORDER BY RAND( ) 
-                LIMIT '.$num;
+                WHERE excluded = 0 AND drug_pool="'.$pool.'" LIMIT '.$num;
 		if(!$results = $mysqli->query($sql)){
             
-            die('There was an error running the query [' . $mysqli->error . ']');
+            die('There was an error running this query [' . $mysqli->error . ']');
         }
         foreach($results as $row)
         {
@@ -172,9 +209,10 @@ class mrsystem
     public function Export2PDF($selected)
     {
         $dompdf = new Dompdf();
-        $options = new \Dompdf\Options();
-        $options->set('isHTML5ParserEnabled', true);
-        $dompdf->loadHtmlFile('export.php');
+        //$options = new \Dompdf\Options();
+        //$options->set('isHTML5ParserEnabled', true);
+        $dompdf->loadHtml($_SESSION['content']);
+        $dompdf->setPaper('A4', 'Landscape');
         $dompdf->render();
         $dompdf->stream();
 
@@ -204,14 +242,66 @@ class mrsystem
         return array('pages'=> $pages, 'perpage' => $perPage);
     }
 
-    public function Import($array)
+    public function Import($file, $deletall=true)
     {
-        if(is_array($array))
-        {
-            foreach($array as $item){
-                $exploded[] = explode($item, ' ');
-                //todo:: figure this shit out lol
-            }
+        $records = array();
+        //rad the file line by line to get each record
+        $file = new SplFileObject($file);
+        while (!$file->eof()){
+            $contents[] = $file->fgets();
         }
+        //sanity check
+        if(isset($contents)){
+            //explode each record with delimiter
+            foreach ($contents as $content) {
+                $records[] = explode(',', $content);
+            }
+            //drop the first array as its the fields.
+            unset($records[0]);
+
+        }else{
+            die('there was an issue with reading the file.');
+        }
+        //filter each array
+        $mysqli = self::DBConnect();
+        $sql = 'INSERT INTO users (personel_number, first_name, middle_name, last_name, ssn, job_location, manager, 
+                hr_rep, field_admin, drug_pool, excluded, role)
+                VALUES';
+        foreach ($records as $record) {
+            $sql_array[] = '("'.$mysqli->escape_string($record[0]).'","'.$mysqli->escape_string($record[1]).'",
+            "'.$mysqli->escape_string($record[2]).'","'.$mysqli->escape_string($record[3]).'","'.$mysqli->escape_string($record[4]).'",
+            "'.$mysqli->escape_string($record[5]).'","'.$mysqli->escape_string($record[6]).'",
+                "'.$mysqli->escape_string($record[7]).'","'.$mysqli->escape_string($record[8]).'","'.$mysqli->escape_string($record[9]).'",0, 1)';
+        }
+        //implode to glue multi insert together
+        $sql = $sql . implode(',', $sql_array);
+        //clean the input some
+        $sql = str_replace("\r\n",'', $sql);
+        $sql = str_replace("\\r\\n",'', $sql);
+        //$sql = str_replace("@", '-at-', $sql);
+        $sql = trim(preg_replace('/\s+/', ' ', $sql));
+        $sql = trim(preg_replace('/\s/', ' ', $sql));
+        if($deletall == true){
+            $mysqli->query('TRUNCATE TABLE users');
+        }
+        if(!$result = $mysqli->query($sql)){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public function GetPools()
+    {
+        $mysqli = self::DBConnect();
+        $sql = "SELECT DISTINCT drug_pool FROM users";
+
+        if(!$result = $mysqli->query($sql)){
+            return false;
+        }
+        foreach($result as $row){
+            $pools[] = $row;
+        }
+        return $pools;
+
     }
 }

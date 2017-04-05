@@ -21,10 +21,12 @@ if (isset($_POST['formtype']) && $_POST['formtype'] === 'select-form'){
             header("Location: export.php");
         }
     }
+}elseif(isset($_POST['formtype']) && $_POST['formtype'] === 'changepool'){
+    header("Location: index.php?pool=".$_POST['pool']);
 }elseif (isset($_POST['formtype']) && $_POST['formtype'] === 'edit-form' && $_POST['delete'] == 'DELETE'){
     $mrs->RemoveMember($_POST['user_id']);
-}elseif(isset($_POST['formtype']) && $_POST['formtype'] === 'create-user'){
-    if($mrs->Register($_POST['user_name'], $_POST['password'], $_POST['role'])) {
+}elseif(isset($_POST['formtype']) && $_POST['formtype'] === 'reg-admin'){
+    if($mrs->Register_Admin($_POST['user_name'], $_POST['password'], $_POST['role'])) {
         header("Location: index.php");
     }
 }elseif(isset($_GET['logout']) && $_GET['logout'] == 1){
@@ -42,34 +44,14 @@ if (isset($_POST['formtype']) && $_POST['formtype'] === 'select-form'){
     }
 }elseif(isset($_GET['import']) && $_GET['import'] == 1)
 {
-    //check for directory, if it does not exist, create it.
-    if(!$exists = file_exists('uploads')){
-        mkdir('uploads');
-    }
-
-    $errors     =   array();
-    $file_name  =   $_FILES['image']['name'];
-    $file_size  =   $_FILES['image']['size'];
-    $file_tmp   =   $_FILES['image']['tmp_name'];
-    $file_type  =   $_FILES['image']['type'];
-    $file_ext   =   strtolower(end(explode('.',$_FILES['image']['name'])));
-
-    $expensions= array('csv','txt');
-
-    if(in_array($file_ext,$expensions)=== false){
-        $errors[] = "extension not allowed, Only .csv and .txt files.";
-    }
-    if(empty($errors)){
-        move_uploaded_file($file_tmp, 'uploads/'.$file_name);
-        $mrs->Import(file('uploads/'.$file_name));
+    if(isset($_POST['deleteall']) && $_POST['deleteall'] == 'checked')
+    {
+        $deleteall = true;
     }else{
-        foreach ($errors as $e){
-            echo $e . ', ';
-        }
-        echo '<br><h3><a href="import.php">Go Back</a></h3>';
+        $deleteall = false;
     }
+    $mrs->Import($_POST['import'],$deleteall);
 
-    $mrs->Import($fileArray);
 }
 else{
     echo 'Something is REALLY WRONG! ';

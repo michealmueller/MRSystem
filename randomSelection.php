@@ -78,33 +78,58 @@
     </div>
     <div class="col-md-12 table-responsive">
         <table class="table table-hover">
-        <tr>
-            <th>User ID</th>
-            <th>First Name</th>
-            <th>LastName</th>
-            <th>Reference Number</th>
-        </tr>
+            <tr>
+                <th>Personel Number</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>LastName</th>
+                <th>SSN</th>
+                <th>Job Location</th>
+                <th>Manager</th>
+                <th>HR Rep</th>
+                <th>Field Admin</th>
+                <th>Drug Pool</th>
+            </tr>
         <?php
 
-            $rand = $mrs->GetRandom($_SESSION['rand-num']);
+            $rand = $mrs->GetRandom($_SESSION['rand-num'], $_SESSION['selected_pool']);
             $_SESSION['rand-users'] = $rand;
-            foreach($rand as $random)
-            {
-                echo '<tr>';
-                    echo '<td>';
-                    echo $random['id'];
-                    echo '</td>';
-                    echo '<td>';
-                    echo $random['first_name'];
-                    echo '</td>';
-                    echo '<td>';
-                    echo $random['last_name'];
-                    echo '</td>';
-                    echo '<td>';
-                    echo $random['reference_number'];
-                    echo '</td>';
-                echo '</tr>';
-            }
+        foreach ($rand as $random)
+        {
+            echo '<tr>';
+            echo '<td>';
+            echo $random['personel_number'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['first_name'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['middle_name'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['last_name'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['ssn'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['job_location'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['manager'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['hr_rep'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['field_admin'];
+            echo '</td>';
+            echo '<td>';
+            echo $random['drug_pool'];
+            echo '</td>';
+            echo '</tr>';
+
+        }
         ?>
         </table>
     </div>

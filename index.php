@@ -29,6 +29,9 @@ if(isset($_POST['token'])) {
 }elseif(isset($_SESSION['user_info']['status']) && $_SESSION['user_info']['status'] !== 1){
     header('Location: login.php');
 }
+if(isset($_GET['pool'])){
+    $_SESSION['selected_pool'] = $_GET['pool'];
+}
 /*
 if($_SESSION['user_info']['status'] !== 1)
 {
@@ -76,7 +79,6 @@ if($_SESSION['user_info']['status'] !== 1)
         <p class="pull-right">
             <a href="createMember.php"><button class=" btn-success">Create New Member</button></a>
             <a href="import.php"><button class=" btn-warning">Import Users</button></a>
-            <a href="edit.php?user_id=<?php if(isset($_SESSION['user_info']['username'])){echo $_SESSION['user_info']['username'];}else{echo 'Admin';} ?>"><button class="btn-warning">Edit Account</button></a>
             <a href="route.php?logout=1"><button class="btn-danger">Logout</button></a>
         </p>
     </div>
@@ -91,6 +93,20 @@ if($_SESSION['user_info']['status'] !== 1)
             <input type="hidden" id="rand-form" name="formtype" value="rand-form">
         </form>
     </div>
+    <form method="post" action="route.php">
+        <select name="pool">
+            <?php
+            $pools = $mrs->GetPools();
+
+            foreach ($pools as $pool) {
+                echo '<option value="'.$pool['drug_pool'].'">'.$pool['drug_pool'].'</option>';
+            }
+
+            ?>
+        </select>
+        <input id="change_pool" type="submit" name="change_pool" value="Change Pool"> <!-- do some JS to refresh the page with the format of /index?pool=$_POST['pool']-->
+        <input type="hidden" name="formtype" value="changepool">
+    </form>
     <div class="col-md-4 pull-right">
         <ul class="pagination">
         <?php
@@ -102,37 +118,62 @@ if($_SESSION['user_info']['status'] !== 1)
     <div class="col-md-12 table-responsive">
         <table class="table table-hover">
             <tr>
-                <th>User ID</th>
+                <th>Personel Number</th>
                 <th>First Name</th>
+                <th>Middle Name</th>
                 <th>LastName</th>
-                <th>Reference Number</th>
-                <th>Date Last Selected</th>
+                <th>SSN</th>
+                <th>Job Location</th>
+                <th>Manager</th>
+                <th>HR Rep</th>
+                <th>Field Admin</th>
+                <th>Drug Pool</th>
                 <th>Modify</th>
             </tr>
             <?php
                 if(isset($_GET['viewSelected']) && $_GET['viewSelected'] == 1){
                     $members = $mrs->ViewSelected();
                 }else{
-                    $members = $mrs->GetMembers($pagination['perpage']);
+                    if(isset($_GET['pool'])){
+                        $pool = $_GET['pool'];
+                    }else{
+                        $pool = 'enter_default_pool';
+                    }
+                    $members = $mrs->GetMembers($pagination['perpage'], $pool);
                 }
 
             foreach ($members as $member)
             {
                 echo '<tr>';
                     echo '<td>';
-                    echo $member['id'];
+                    echo $member['personel_number'];
                     echo '</td>';
                     echo '<td>';
                     echo $member['first_name'];
                     echo '</td>';
                     echo '<td>';
+                    echo $member['middle_name'];
+                    echo '</td>';
+                    echo '<td>';
                     echo $member['last_name'];
                     echo '</td>';
                     echo '<td>';
-                    echo $member['reference_number'];
+                    echo $member['ssn'];
                     echo '</td>';
                     echo '<td>';
-                    echo $member['date_selected'];
+                    echo $member['job_location'];
+                    echo '</td>';
+                    echo '<td>';
+                    echo $member['manager'];
+                    echo '</td>';
+                    echo '<td>';
+                    echo $member['hr_rep'];
+                    echo '</td>';
+                    echo '<td>';
+                    echo $member['field_admin'];
+                    echo '</td>';
+                    echo '<td>';
+                    echo $member['drug_pool'];
                     echo '</td>';
                     echo '<td>';
                     echo '<div><a href="edit.php?user_id='.$member['id'].'"><div class="glyphicon glyphicon-edit"></div></a> &nbsp;|&nbsp; <a href="route.php?deluser=1&user_id='.$member['id'].'"><div class="glyphicon glyphicon-remove"></div></a></div>';

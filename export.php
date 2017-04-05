@@ -9,7 +9,8 @@
 
     session_start();
 
-    require_once 'lib/html2pdf/vendor/autoload.php';
+    require 'vendor/autoload.php';
+    use Dompdf\Dompdf;
     if(isset($_GET['export']) && $_GET['export'] == 1) {
 
 
@@ -19,13 +20,18 @@
             .$output[0][0];
 
         //echo '<div class="col-md-12" align="center"><a href="export.php?export=1"><button class="btn btn-warning">Export to PDF</button></a></div>';
-        $_SESSION['content'] = $content;
+        //$_SESSION['content'] = $content;
 
-        $html2pdf = new \Spipu\Html2Pdf\Html2Pdf('P', 'A4', 'en');
-        $html2pdf->setDefaultFont('courier');
-        $html2pdf->writeHTML($_SESSION['content']);
-        if($html2pdf->Output('Selected_Users.pdf','D') == true){
-            header('Location: index.php');
+        $dompdf = new Dompdf();
+        $options = new \Dompdf\Options();
+        $options->set('isHTML5ParserEnabled', true);
+        $dompdf->loadHtml($content);
+        $dompdf->setPaper('A4', 'Landscape');
+        $dompdf->render();
+        $pdf = $dompdf->output();
+        $dompdf->stream(date('m-d-y_H:i:s').'-Selected.pdf');
+        if(file_put_contents(date('m-d-y_H:i:s').'-Selected.pdf', $pdf)){
+            header('Location: export.php');
         }
     }
     $_SESSION['content'] = preg_replace('|\<form name([\s\S]*)</form>|','', $_SESSION['content']);
